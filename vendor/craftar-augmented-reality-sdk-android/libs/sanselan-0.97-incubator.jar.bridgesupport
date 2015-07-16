@@ -1,0 +1,2202 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name="org/apache/sanselan/color/ColorCIELab" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorCIELCH" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorCIELuv" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorCMY" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorCMYK" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorConversions" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="main" type="([Ljava/lang/String;)V" class_method="true"/>
+<method name="convertXYZtoCIELab" type="(Lorg/apache/sanselan/color/ColorXYZ;)Lorg/apache/sanselan/color/ColorCIELab;" class_method="true"/>
+<method name="convertXYZtoCIELab" type="(DDD)Lorg/apache/sanselan/color/ColorCIELab;" class_method="true"/>
+<method name="convertCIELabtoXYZ" type="(Lorg/apache/sanselan/color/ColorCIELab;)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+<method name="convertCIELabtoXYZ" type="(DDD)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+<method name="convertXYZtoHunterLab" type="(Lorg/apache/sanselan/color/ColorXYZ;)Lorg/apache/sanselan/color/ColorHunterLab;" class_method="true"/>
+<method name="convertXYZtoHunterLab" type="(DDD)Lorg/apache/sanselan/color/ColorHunterLab;" class_method="true"/>
+<method name="convertHunterLabtoXYZ" type="(Lorg/apache/sanselan/color/ColorHunterLab;)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+<method name="convertHunterLabtoXYZ" type="(DDD)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+<method name="convertXYZtoRGB" type="(Lorg/apache/sanselan/color/ColorXYZ;)I" class_method="true"/>
+<method name="convertXYZtoRGB" type="(DDD)I" class_method="true"/>
+<method name="convertRGBtoXYZ" type="(I)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+<method name="convertRGBtoCMY" type="(I)Lorg/apache/sanselan/color/ColorCMY;" class_method="true"/>
+<method name="convertCMYtoRGB" type="(Lorg/apache/sanselan/color/ColorCMY;)I" class_method="true"/>
+<method name="convertCMYtoCMYK" type="(Lorg/apache/sanselan/color/ColorCMY;)Lorg/apache/sanselan/color/ColorCMYK;" class_method="true"/>
+<method name="convertCMYKtoCMY" type="(Lorg/apache/sanselan/color/ColorCMYK;)Lorg/apache/sanselan/color/ColorCMY;" class_method="true"/>
+<method name="convertCMYKtoCMY" type="(DDDD)Lorg/apache/sanselan/color/ColorCMY;" class_method="true"/>
+<method name="convertCMYKtoRGB" type="(IIII)I" class_method="true"/>
+<method name="convertRGBtoHSL" type="(I)Lorg/apache/sanselan/color/ColorHSL;" class_method="true"/>
+<method name="convertHSLtoRGB" type="(Lorg/apache/sanselan/color/ColorHSL;)I" class_method="true"/>
+<method name="convertHSLtoRGB" type="(DDD)I" class_method="true"/>
+<method name="convertRGBtoHSV" type="(I)Lorg/apache/sanselan/color/ColorHSV;" class_method="true"/>
+<method name="convertHSVtoRGB" type="(Lorg/apache/sanselan/color/ColorHSV;)I" class_method="true"/>
+<method name="convertHSVtoRGB" type="(DDD)I" class_method="true"/>
+<method name="convertCMYKtoRGB_old" type="(IIII)I" class_method="true"/>
+<method name="convertCIELabtoARGBTest" type="(III)I" class_method="true"/>
+<method name="convertCIELabtoCIELCH" type="(Lorg/apache/sanselan/color/ColorCIELab;)Lorg/apache/sanselan/color/ColorCIELCH;" class_method="true"/>
+<method name="convertCIELabtoCIELCH" type="(DDD)Lorg/apache/sanselan/color/ColorCIELCH;" class_method="true"/>
+<method name="convertCIELCHtoCIELab" type="(Lorg/apache/sanselan/color/ColorCIELCH;)Lorg/apache/sanselan/color/ColorCIELab;" class_method="true"/>
+<method name="convertCIELCHtoCIELab" type="(DDD)Lorg/apache/sanselan/color/ColorCIELab;" class_method="true"/>
+<method name="degree_2_radian" type="(D)D" class_method="true"/>
+<method name="radian_2_degree" type="(D)D" class_method="true"/>
+<method name="convertXYZtoCIELuv" type="(Lorg/apache/sanselan/color/ColorXYZ;)Lorg/apache/sanselan/color/ColorCIELuv;" class_method="true"/>
+<method name="convertXYZtoCIELuv" type="(DDD)Lorg/apache/sanselan/color/ColorCIELuv;" class_method="true"/>
+<method name="convertCIELuvtoXYZ" type="(Lorg/apache/sanselan/color/ColorCIELuv;)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+<method name="convertCIELuvtoXYZ" type="(DDD)Lorg/apache/sanselan/color/ColorXYZ;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/color/ColorHSL" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorHSV" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorHunterLab" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/color/ColorXYZ" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DDD)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/ColorTools" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="correctImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/File;)Ljava/awt/image/BufferedImage;"/>
+<method name="relabelColorSpace" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ICC_Profile;)Ljava/awt/image/BufferedImage;"/>
+<method name="relabelColorSpace" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;)Ljava/awt/image/BufferedImage;"/>
+<method name="relabelColorSpace" type="(Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)Ljava/awt/image/BufferedImage;"/>
+<method name="deriveColorModel" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;)Ljava/awt/image/ColorModel;"/>
+<method name="deriveColorModel" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;Z)Ljava/awt/image/ColorModel;"/>
+<method name="deriveColorModel" type="(Ljava/awt/image/ColorModel;Ljava/awt/color/ColorSpace;Z)Ljava/awt/image/ColorModel;"/>
+<method name="convertToColorSpace" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;)Ljava/awt/image/BufferedImage;"/>
+<method name="convertTosRGB" type="(Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;"/>
+<method name="convertFromColorSpace" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;)Ljava/awt/image/BufferedImage;"/>
+<method name="convertBetweenICCProfiles" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ICC_Profile;Ljava/awt/color/ICC_Profile;)Ljava/awt/image/BufferedImage;"/>
+<method name="convertToICCProfile" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ICC_Profile;)Ljava/awt/image/BufferedImage;"/>
+<method name="convertBetweenColorSpacesX2" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;Ljava/awt/color/ColorSpace;)Ljava/awt/image/BufferedImage;"/>
+<method name="convertBetweenColorSpaces" type="(Ljava/awt/image/BufferedImage;Ljava/awt/color/ColorSpace;Ljava/awt/color/ColorSpace;)Ljava/awt/image/BufferedImage;"/>
+</class>
+<class name="org/apache/sanselan/common/BinaryFileParser" super="org/apache/sanselan/common/BinaryFileFunctions">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="&lt;init&gt;" type="()V"/>
+<method name="setByteOrder" type="(II)V"/>
+<method name="setByteOrder" type="(I)V"/>
+<method name="getByteOrder" type="()I"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;I[B)I"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;[B)I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;[B)I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;I[B)I"/>
+<method name="read4Bytes" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)I"/>
+<method name="read3Bytes" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)I"/>
+<method name="read2Bytes" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)I"/>
+<method name="byteArrayHasPrefix" type="([B[B)Z" class_method="true"/>
+<method name="int2ToByteArray" type="(I)[B"/>
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSource" super="org/apache/sanselan/common/BinaryFileFunctions">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="getInputStream" type="(I)Ljava/io/InputStream;"/>
+<method name="getInputStream" type="()Ljava/io/InputStream;"/>
+<method name="getBlock" type="(II)[B"/>
+<method name="getAll" type="()[B"/>
+<method name="getLength" type="()J"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+<method name="getFilename" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSourceArray" super="org/apache/sanselan/common/byteSources/ByteSource">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;[B)V"/>
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="getInputStream" type="()Ljava/io/InputStream;"/>
+<method name="getBlock" type="(II)[B"/>
+<method name="getLength" type="()J"/>
+<method name="getAll" type="()[B"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSourceFile" super="org/apache/sanselan/common/byteSources/ByteSource">
+<method name="&lt;init&gt;" type="(Ljava/io/File;)V"/>
+<method name="getInputStream" type="()Ljava/io/InputStream;"/>
+<method name="getBlock" type="(II)[B"/>
+<method name="getLength" type="()J"/>
+<method name="getAll" type="()[B"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSourceInputStream$1" super="java/lang/Object">
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSourceInputStream$CacheBlock" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream;[B)V"/>
+<method name="getNext" type="()Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream$CacheBlock;"/>
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSourceInputStream$CacheReadingInputStream" super="java/io/InputStream">
+<method name="read" type="()I"/>
+<method name="read" type="([BII)I"/>
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream;Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream$1;)V"/>
+</class>
+<class name="org/apache/sanselan/common/byteSources/ByteSourceInputStream" super="org/apache/sanselan/common/byteSources/ByteSource">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;Ljava/lang/String;)V"/>
+<method name="getInputStream" type="()Ljava/io/InputStream;"/>
+<method name="getBlock" type="(II)[B"/>
+<method name="getLength" type="()J"/>
+<method name="getAll" type="()[B"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+<method name="access$000" type="(Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream;)Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream$CacheBlock;" class_method="true"/>
+<method name="access$100" type="(Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream;)Lorg/apache/sanselan/common/byteSources/ByteSourceInputStream$CacheBlock;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/common/Compression" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="decompressLZW" type="([BIII)[B"/>
+<method name="decompressPackBits" type="([BII)[B"/>
+<method name="compressLZW" type="([BIIZ)[B"/>
+</class>
+<class name="org/apache/sanselan/common/MyByteArrayOutputStream" super="java/io/OutputStream">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="write" type="(I)V"/>
+<method name="toByteArray" type="()[B"/>
+<method name="getBytesWritten" type="()I"/>
+</class>
+<class name="org/apache/sanselan/common/mylzw/BitsToByteInputStream" super="java/io/InputStream">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/common/mylzw/MyBitInputStream;I)V"/>
+<method name="read" type="()I"/>
+<method name="readBits" type="(I)I"/>
+<method name="readBitsArray" type="(II)[I"/>
+</class>
+<class name="org/apache/sanselan/common/mylzw/MyLZWCompressor$ByteArray" super="java/lang/Object">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="&lt;init&gt;" type="([BII)V"/>
+<method name="hashCode" type="()I"/>
+<method name="equals" type="(Ljava/lang/Object;)Z"/>
+</class>
+<class name="org/apache/sanselan/common/mylzw/MyLZWCompressor" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(IIZ)V"/>
+<method name="&lt;init&gt;" type="(IIZLorg/apache/sanselan/common/mylzw/MyLZWCompressor$Listener;)V"/>
+<method name="compress" type="([B)[B"/>
+</class>
+<class name="org/apache/sanselan/common/mylzw/MyLZWDecompressor" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="&lt;init&gt;" type="(IILorg/apache/sanselan/common/mylzw/MyLZWDecompressor$Listener;)V"/>
+<method name="setTiffLZWMode" type="()V"/>
+<method name="decompress" type="(Ljava/io/InputStream;I)[B"/>
+</class>
+<class name="org/apache/sanselan/common/PackBits" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="decompress" type="([BI)[B"/>
+<method name="compress" type="([B)[B"/>
+</class>
+<class name="org/apache/sanselan/common/RationalNumber" super="java/lang/Number">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="factoryMethod" type="(JJ)Lorg/apache/sanselan/common/RationalNumber;" class_method="true"/>
+<method name="negate" type="()Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="doubleValue" type="()D"/>
+<method name="floatValue" type="()F"/>
+<method name="intValue" type="()I"/>
+<method name="longValue" type="()J"/>
+<method name="isValid" type="()Z"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toDisplayString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/RationalNumberUtilities$Option" super="java/lang/Object">
+<method name="factory" type="(Lorg/apache/sanselan/common/RationalNumber;D)Lorg/apache/sanselan/common/RationalNumberUtilities$Option;" class_method="true"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/RationalNumberUtilities" super="java/lang/Number">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRationalNumber" type="(D)Lorg/apache/sanselan/common/RationalNumber;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/common/ZLibUtils" super="org/apache/sanselan/common/BinaryFileFunctions">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="inflate" type="([B)[B"/>
+<method name="deflate" type="([B)[B"/>
+</class>
+<class name="org/apache/sanselan/FormatCompliance" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Z)V"/>
+<method name="getDefault" type="()Lorg/apache/sanselan/FormatCompliance;" class_method="true"/>
+<method name="addComment" type="(Ljava/lang/String;)V"/>
+<method name="addComment" type="(Ljava/lang/String;I)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="dump" type="()V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;)V"/>
+<method name="compare_bytes" type="(Ljava/lang/String;[B[B)Z"/>
+<method name="checkBounds" type="(Ljava/lang/String;III)Z"/>
+<method name="compare" type="(Ljava/lang/String;II)Z"/>
+<method name="compare" type="(Ljava/lang/String;[II)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/BmpHeaderInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(BBIIIIIIIIIIIIII)V"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/BmpImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="getFormatCompliance" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/FormatCompliance;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/ImageContents" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/bmp/BmpHeaderInfo;[B[BLorg/apache/sanselan/formats/bmp/pixelparsers/PixelParser;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/pixelparsers/PixelParser" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/bmp/BmpHeaderInfo;[B[B)V"/>
+<method name="processImage" type="(Ljava/awt/image/BufferedImage;)V"/>
+<method name="getColorTableRGB" type="(I)I"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/pixelparsers/PixelParserBitFields" super="org/apache/sanselan/formats/bmp/pixelparsers/PixelParserSimple">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/bmp/BmpHeaderInfo;[B[B)V"/>
+<method name="getNextRGB" type="()I"/>
+<method name="newline" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/pixelparsers/PixelParserRgb" super="org/apache/sanselan/formats/bmp/pixelparsers/PixelParserSimple">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/bmp/BmpHeaderInfo;[B[B)V"/>
+<method name="getNextRGB" type="()I"/>
+<method name="newline" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/pixelparsers/PixelParserRle" super="org/apache/sanselan/formats/bmp/pixelparsers/PixelParser">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/bmp/BmpHeaderInfo;[B[B)V"/>
+<method name="processImage" type="(Ljava/awt/image/BufferedImage;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/pixelparsers/PixelParserSimple" super="org/apache/sanselan/formats/bmp/pixelparsers/PixelParser">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/bmp/BmpHeaderInfo;[B[B)V"/>
+<method name="getNextRGB" type="()I"/>
+<method name="newline" type="()V"/>
+<method name="processImage" type="(Ljava/awt/image/BufferedImage;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/writers/BMPWriter" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getPaletteSize" type="()I"/>
+<method name="getBitsPerPixel" type="()I"/>
+<method name="writePalette" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+<method name="getImageData" type="(Ljava/awt/image/BufferedImage;)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/writers/BMPWriterPalette" super="org/apache/sanselan/formats/bmp/writers/BMPWriter">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/SimplePalette;)V"/>
+<method name="getPaletteSize" type="()I"/>
+<method name="getBitsPerPixel" type="()I"/>
+<method name="writePalette" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+<method name="getImageData" type="(Ljava/awt/image/BufferedImage;)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/bmp/writers/BMPWriterRGB" super="org/apache/sanselan/formats/bmp/writers/BMPWriter">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getPaletteSize" type="()I"/>
+<method name="getBitsPerPixel" type="()I"/>
+<method name="writePalette" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+<method name="getImageData" type="(Ljava/awt/image/BufferedImage;)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/GenericGIFBlock" super="org/apache/sanselan/formats/gif/GIFBlock">
+<method name="&lt;init&gt;" type="(ILjava/util/ArrayList;)V"/>
+<method name="appendSubBlocks" type="()[B"/>
+<method name="appendSubBlocks" type="(Z)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/GIFBlock" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I)V"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/GIFHeaderInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(BBBBBBIIBBBZBZB)V"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/GifImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="readGenericGIFBlock" type="(Ljava/io/InputStream;I)Lorg/apache/sanselan/formats/gif/GenericGIFBlock;"/>
+<method name="readGenericGIFBlock" type="(Ljava/io/InputStream;I[B)Lorg/apache/sanselan/formats/gif/GenericGIFBlock;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="getFormatCompliance" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/FormatCompliance;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/GraphicControlExtension" super="org/apache/sanselan/formats/gif/GIFBlock">
+<method name="&lt;init&gt;" type="(IIIZII)V"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/ImageContents" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/gif/GIFHeaderInfo;[BLjava/util/ArrayList;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/gif/ImageDescriptor" super="org/apache/sanselan/formats/gif/GIFBlock">
+<method name="&lt;init&gt;" type="(IIIIIBZZZB[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/ico/IcoImageParser$BitmapHeader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(IIIIIIIIIII)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/ico/IcoImageParser$FileHeader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(III)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/ico/IcoImageParser$IconData" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/ico/IcoImageParser$IconInfo;Lorg/apache/sanselan/formats/ico/IcoImageParser$BitmapHeader;[B[BI[BI)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/ico/IcoImageParser$IconInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(BBBBIIII)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/ico/IcoImageParser$ImageContents" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/ico/IcoImageParser$FileHeader;[Lorg/apache/sanselan/formats/ico/IcoImageParser$IconData;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/ico/IcoImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="getAllBufferedImages" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Ljava/util/ArrayList;"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$ExifOverflowException" super="org/apache/sanselan/ImageWriteException">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPiece" super="java/lang/Object">
+<method name="write" type="(Ljava/io/OutputStream;)V"/>
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$1;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPieceImageData" super="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPiece">
+<method name="&lt;init&gt;" type="([B[B)V"/>
+<method name="write" type="(Ljava/io/OutputStream;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPieces" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/util/List;Ljava/util/List;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPieceSegment" super="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPiece">
+<method name="&lt;init&gt;" type="(I[B[B[B)V"/>
+<method name="write" type="(Ljava/io/OutputStream;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPieceSegmentExif" super="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$JFIFPieceSegment">
+<method name="&lt;init&gt;" type="(I[B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCBlock" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I[B[B)V"/>
+<method name="isIPTCBlock" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCRecord" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/iptc/IPTCType;Ljava/lang/String;)V"/>
+<method name="getValue" type="()Ljava/lang/String;"/>
+<method name="getIptcTypeName" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/App13Segment" super="org/apache/sanselan/formats/jpeg/segments/APPNSegment">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;I[B)V"/>
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;IILjava/io/InputStream;)V"/>
+<method name="isPhotoshopJpegSegment" type="()Z"/>
+<method name="parsePhotoshopSegment" type="(Ljava/util/Map;)Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/APPNSegment" super="org/apache/sanselan/formats/jpeg/segments/GenericSegment">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/GenericSegment" super="org/apache/sanselan/formats/jpeg/segments/Segment">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;)V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;I)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/Segment" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;)V"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="getSegmentType" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/SOFNSegment" super="org/apache/sanselan/formats/jpeg/segments/Segment">
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/SOSSegment" super="org/apache/sanselan/formats/jpeg/segments/Segment">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/UnknownSegment" super="org/apache/sanselan/formats/jpeg/segments/GenericSegment">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPiece" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="write" type="(Ljava/io/OutputStream;)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieceImageData" super="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPiece">
+<method name="&lt;init&gt;" type="([B[B)V"/>
+<method name="write" type="(Ljava/io/OutputStream;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieces" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/util/List;Ljava/util/List;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieceSegment" super="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPiece">
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="&lt;init&gt;" type="(I[B[B[B)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="write" type="(Ljava/io/OutputStream;)V"/>
+<method name="isApp1Segment" type="()Z"/>
+<method name="isAppSegment" type="()Z"/>
+<method name="isExifSegment" type="()Z"/>
+<method name="isPhotoshopApp13Segment" type="()Z"/>
+<method name="isXmpSegment" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JpegSegmentOverflowException" super="org/apache/sanselan/ImageWriteException">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegXmpRewriter" super="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="removeXmpXml" type="(Ljava/io/File;Ljava/io/OutputStream;)V"/>
+<method name="removeXmpXml" type="([BLjava/io/OutputStream;)V"/>
+<method name="removeXmpXml" type="(Ljava/io/InputStream;Ljava/io/OutputStream;)V"/>
+<method name="removeXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;)V"/>
+<method name="updateXmpXml" type="([BLjava/io/OutputStream;Ljava/lang/String;)V"/>
+<method name="updateXmpXml" type="(Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/lang/String;)V"/>
+<method name="updateXmpXml" type="(Ljava/io/File;Ljava/io/OutputStream;Ljava/lang/String;)V"/>
+<method name="updateXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/BitParser" super="java/lang/Object">
+<method name="&lt;init&gt;" type="([BII)V"/>
+<method name="getSample" type="(II)I"/>
+<method name="getSampleAsByte" type="(II)I"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunk" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getDataStream" type="()Ljava/io/ByteArrayInputStream;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkgAMA" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getGamma" type="()D"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkiCCP" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkIDAT" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkIHDR" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkiTXt" super="org/apache/sanselan/formats/png/chunks/PNGTextChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getKeyword" type="()Ljava/lang/String;"/>
+<method name="getText" type="()Ljava/lang/String;"/>
+<method name="getContents" type="()Lorg/apache/sanselan/formats/png/PngText;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkpHYs" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkPLTE" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getRGB" type="(I)I"/>
+<method name="correct" type="(Lorg/apache/sanselan/formats/png/GammaCorrection;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunktEXt" super="org/apache/sanselan/formats/png/chunks/PNGTextChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getKeyword" type="()Ljava/lang/String;"/>
+<method name="getText" type="()Ljava/lang/String;"/>
+<method name="getContents" type="()Lorg/apache/sanselan/formats/png/PngText;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGChunkzTXt" super="org/apache/sanselan/formats/png/chunks/PNGTextChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getKeyword" type="()Ljava/lang/String;"/>
+<method name="getText" type="()Ljava/lang/String;"/>
+<method name="getContents" type="()Lorg/apache/sanselan/formats/png/PngText;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/chunks/PNGTextChunk" super="org/apache/sanselan/formats/png/chunks/PNGChunk">
+<method name="&lt;init&gt;" type="(III[B)V"/>
+<method name="getKeyword" type="()Ljava/lang/String;"/>
+<method name="getText" type="()Ljava/lang/String;"/>
+<method name="getContents" type="()Lorg/apache/sanselan/formats/png/PngText;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/GammaCorrection" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(DD)V"/>
+<method name="correctSample" type="(I)I"/>
+<method name="correctARGB" type="(I)I"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngCrc" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="crc" type="([BI)I"/>
+<method name="start_partial_crc" type="([BI)J"/>
+<method name="continue_partial_crc" type="(J[BI)J"/>
+<method name="finish_partial_crc" type="(J)J"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngImageInfo" super="org/apache/sanselan/ImageInfo">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILjava/util/ArrayList;Lorg/apache/sanselan/ImageFormat;Ljava/lang/String;ILjava/lang/String;IIFIFIZZZILjava/lang/String;Ljava/util/List;)V"/>
+<method name="getTextChunks" type="()Ljava/util/List;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngText$iTXt" super="org/apache/sanselan/formats/png/PngText">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngText$tEXt" super="org/apache/sanselan/formats/png/PngText">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngText$zTXt" super="org/apache/sanselan/formats/png/PngText">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngText" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngWriter$ImageHeader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(IIBBBBB)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/ScanExpediter" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;Ljava/awt/image/BufferedImage;IIILorg/apache/sanselan/formats/png/chunks/PNGChunkPLTE;Lorg/apache/sanselan/formats/png/GammaCorrection;Lorg/apache/sanselan/formats/transparencyfilters/TransparencyFilter;)V"/>
+<method name="getBitsToBytesRoundingUp" type="(I)I"/>
+<method name="getPixelARGB" type="(IIII)I"/>
+<method name="getPixelRGB" type="(III)I"/>
+<method name="drive" type="()V"/>
+<method name="getRGB" type="(Lorg/apache/sanselan/formats/png/BitParser;I)I"/>
+<method name="getScanlineFilter" type="(II)Lorg/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter;"/>
+<method name="unfilterScanline" type="(I[B[BI)[B"/>
+<method name="getNextScanline" type="(Ljava/io/InputStream;I[BI)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/png/ScanExpediterInterlaced" super="org/apache/sanselan/formats/png/ScanExpediter">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;Ljava/awt/image/BufferedImage;IIILorg/apache/sanselan/formats/png/chunks/PNGChunkPLTE;Lorg/apache/sanselan/formats/png/GammaCorrection;Lorg/apache/sanselan/formats/transparencyfilters/TransparencyFilter;)V"/>
+<method name="drive" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/ScanExpediterSimple" super="org/apache/sanselan/formats/png/ScanExpediter">
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;Ljava/awt/image/BufferedImage;IIILorg/apache/sanselan/formats/png/chunks/PNGChunkPLTE;Lorg/apache/sanselan/formats/png/GammaCorrection;Lorg/apache/sanselan/formats/transparencyfilters/TransparencyFilter;)V"/>
+<method name="drive" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="unfilter" type="([B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilterAverage" super="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="unfilter" type="([B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilterNone" super="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="unfilter" type="([B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilterPaeth" super="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="unfilter" type="([B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilterSub" super="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="unfilter" type="([B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilterUp" super="org/apache/sanselan/formats/png/scanlinefilters/ScanlineFilter">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="unfilter" type="([B[B[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/FileInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(IIZ)V"/>
+<method name="getNumComponents" type="()I"/>
+<method name="getBitDepth" type="()I"/>
+<method name="getImageType" type="()Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getImageTypeDescription" type="()Ljava/lang/String;"/>
+<method name="getMIMEType" type="()Ljava/lang/String;"/>
+<method name="getColorType" type="()I"/>
+<method name="getRGB" type="(Lorg/apache/sanselan/formats/pnm/WhiteSpaceReader;)I"/>
+<method name="getRGB" type="(Ljava/io/InputStream;)I"/>
+<method name="newline" type="()V"/>
+<method name="readImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/InputStream;)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PBMFileInfo" super="org/apache/sanselan/formats/pnm/FileInfo">
+<method name="&lt;init&gt;" type="(IIZ)V"/>
+<method name="getNumComponents" type="()I"/>
+<method name="getBitDepth" type="()I"/>
+<method name="getImageType" type="()Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getColorType" type="()I"/>
+<method name="getImageTypeDescription" type="()Ljava/lang/String;"/>
+<method name="getMIMEType" type="()Ljava/lang/String;"/>
+<method name="newline" type="()V"/>
+<method name="getRGB" type="(Ljava/io/InputStream;)I"/>
+<method name="getRGB" type="(Lorg/apache/sanselan/formats/pnm/WhiteSpaceReader;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PGMFileInfo" super="org/apache/sanselan/formats/pnm/FileInfo">
+<method name="&lt;init&gt;" type="(IIZI)V"/>
+<method name="getNumComponents" type="()I"/>
+<method name="getBitDepth" type="()I"/>
+<method name="getImageType" type="()Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getImageTypeDescription" type="()Ljava/lang/String;"/>
+<method name="getMIMEType" type="()Ljava/lang/String;"/>
+<method name="getColorType" type="()I"/>
+<method name="getRGB" type="(Ljava/io/InputStream;)I"/>
+<method name="getRGB" type="(Lorg/apache/sanselan/formats/pnm/WhiteSpaceReader;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PGMWriter" super="org/apache/sanselan/formats/pnm/PNMWriter">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PNMWriter" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PPMFileInfo" super="org/apache/sanselan/formats/pnm/FileInfo">
+<method name="&lt;init&gt;" type="(IIZI)V"/>
+<method name="getNumComponents" type="()I"/>
+<method name="getBitDepth" type="()I"/>
+<method name="getImageType" type="()Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getImageTypeDescription" type="()Ljava/lang/String;"/>
+<method name="getMIMEType" type="()Ljava/lang/String;"/>
+<method name="getColorType" type="()I"/>
+<method name="getRGB" type="(Ljava/io/InputStream;)I"/>
+<method name="getRGB" type="(Lorg/apache/sanselan/formats/pnm/WhiteSpaceReader;)I"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PPMWriter" super="org/apache/sanselan/formats/pnm/PNMWriter">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/WhiteSpaceReader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;)V"/>
+<method name="nextChar" type="()C"/>
+<method name="readtoWhiteSpace" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParser" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="parseData" type="([[[ILjava/awt/image/BufferedImage;Lorg/apache/sanselan/formats/psd/ImageContents;)V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserBitmap" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserCMYK" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserGrayscale" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserIndexed" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserLab" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserRGB" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/dataparsers/DataParserStub" super="org/apache/sanselan/formats/psd/dataparsers/DataParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getRGB" type="([[[IIILorg/apache/sanselan/formats/psd/ImageContents;)I"/>
+<method name="getBasicChannelsCount" type="()I"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/datareaders/CompressedDataReader" super="org/apache/sanselan/formats/psd/datareaders/DataReader">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/psd/dataparsers/DataParser;)V"/>
+<method name="readData" type="(Ljava/io/InputStream;Ljava/awt/image/BufferedImage;Lorg/apache/sanselan/formats/psd/ImageContents;Lorg/apache/sanselan/common/BinaryFileParser;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/datareaders/UncompressedDataReader" super="org/apache/sanselan/formats/psd/datareaders/DataReader">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/psd/dataparsers/DataParser;)V"/>
+<method name="readData" type="(Ljava/io/InputStream;Ljava/awt/image/BufferedImage;Lorg/apache/sanselan/formats/psd/ImageContents;Lorg/apache/sanselan/common/BinaryFileParser;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/ImageContents" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/psd/PSDHeaderInfo;IIII)V"/>
+<method name="dump" type="()V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/ImageResourceBlock" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I[B[B)V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/ImageResourceType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(IILjava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/PSDConstants" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getDescription" type="(I)Ljava/lang/String;"/>
+<method name="class$" type="(Ljava/lang/String;)Ljava/lang/Class;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/PSDHeaderInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I[BIIIII)V"/>
+<method name="dump" type="()V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/PsdImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagInfo$Date" super="org/apache/sanselan/formats/tiff/constants/TagInfo">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;I)V"/>
+<method name="getValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="encodeValue" type="(Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;Ljava/lang/Object;I)[B"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="isDate" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagInfo$Offset" super="org/apache/sanselan/formats/tiff/constants/TagInfo">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I[Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;I)V"/>
+<method name="isOffset" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagInfo$Text$TextEncoding" super="java/lang/Object">
+<method name="&lt;init&gt;" type="([BLjava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagInfo$Text" super="org/apache/sanselan/formats/tiff/constants/TagInfo">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I[Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="isText" type="()Z"/>
+<method name="encodeValue" type="(Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;Ljava/lang/Object;I)[B"/>
+<method name="getValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagInfo$Unknown" super="org/apache/sanselan/formats/tiff/constants/TagInfo">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I[Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="isUnknown" type="()Z"/>
+<method name="encodeValue" type="(Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;Ljava/lang/Object;I)[B"/>
+<method name="getValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType$Image" super="org/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="isImageDirectory" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType$Special" super="org/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="isImageDirectory" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="isImageDirectory" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/datareaders/DataReaderStrips" super="org/apache/sanselan/formats/tiff/datareaders/DataReader">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter;I[IIIIIIILorg/apache/sanselan/formats/tiff/TiffImageData$Strips;)V"/>
+<method name="readImageData" type="(Ljava/awt/image/BufferedImage;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/datareaders/DataReaderTiled" super="org/apache/sanselan/formats/tiff/datareaders/DataReader">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter;III[IIIIIILorg/apache/sanselan/formats/tiff/TiffImageData$Tiles;)V"/>
+<method name="readImageData" type="(Ljava/awt/image/BufferedImage;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeASCII" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeByte" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeDouble" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeFloat" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeLong" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeRational" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+<method name="writeData" type="(III)[B"/>
+<method name="writeData" type="([I[II)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeShort" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldTypeUnknown" super="org/apache/sanselan/formats/tiff/fieldtypes/FieldType">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/JpegImageData" super="org/apache/sanselan/formats/tiff/TiffElement$DataElement">
+<method name="&lt;init&gt;" type="(II[B)V"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I[IIII)V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+<method name="dumpstats" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterBiLevel" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="(II[IIIIZ)V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterCIELAB" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="(I[IIII)V"/>
+<method name="dumpstats" type="()V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterCMYK" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="(I[IIII)V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterLogLUV" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="(I[IIIIZ)V"/>
+<method name="dumpstats" type="()V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterPalette" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="(I[IIII[I)V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterRGB" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="(I[IIII)V"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreterYCbCr" super="org/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter">
+<method name="&lt;init&gt;" type="([D[I[I[DI[IIII)V"/>
+<method name="limit" type="(III)I"/>
+<method name="convertYCbCrtoRGB" type="(III)I"/>
+<method name="interpretPixel" type="(Ljava/awt/image/BufferedImage;[III)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffContents" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/TiffHeader;Ljava/util/ArrayList;)V"/>
+<method name="getElements" type="()Ljava/util/ArrayList;"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+<method name="dissect" type="(Z)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffDirectory$ImageDataElement" super="org/apache/sanselan/formats/tiff/TiffElement">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;II)V"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffElement$DataElement" super="org/apache/sanselan/formats/tiff/TiffElement">
+<method name="&lt;init&gt;" type="(II[B)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffElement$Stub" super="org/apache/sanselan/formats/tiff/TiffElement">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffElement" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="getElementDescription" type="()Ljava/lang/String;"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffField$OversizeValueElement" super="org/apache/sanselan/formats/tiff/TiffElement">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/TiffField;II)V"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffHeader" super="org/apache/sanselan/formats/tiff/TiffElement">
+<method name="&lt;init&gt;" type="(III)V"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageData$Data" super="org/apache/sanselan/formats/tiff/TiffElement$DataElement">
+<method name="&lt;init&gt;" type="(II[B)V"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageData$Strips" super="org/apache/sanselan/formats/tiff/TiffImageData">
+<method name="&lt;init&gt;" type="([Lorg/apache/sanselan/formats/tiff/TiffElement$DataElement;I)V"/>
+<method name="getImageData" type="()[Lorg/apache/sanselan/formats/tiff/TiffElement$DataElement;"/>
+<method name="stripsNotTiles" type="()Z"/>
+<method name="getDataReader" type="(Ljava/util/ArrayList;Lorg/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter;I[IIIIII)Lorg/apache/sanselan/formats/tiff/datareaders/DataReader;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageData$Tiles" super="org/apache/sanselan/formats/tiff/TiffImageData">
+<method name="&lt;init&gt;" type="([Lorg/apache/sanselan/formats/tiff/TiffElement$DataElement;II)V"/>
+<method name="getImageData" type="()[Lorg/apache/sanselan/formats/tiff/TiffElement$DataElement;"/>
+<method name="stripsNotTiles" type="()Z"/>
+<method name="getDataReader" type="(Ljava/util/ArrayList;Lorg/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter;I[IIIIII)Lorg/apache/sanselan/formats/tiff/datareaders/DataReader;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageData" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getImageData" type="()[Lorg/apache/sanselan/formats/tiff/TiffElement$DataElement;"/>
+<method name="stripsNotTiles" type="()Z"/>
+<method name="getDataReader" type="(Ljava/util/ArrayList;Lorg/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter;I[IIIIII)Lorg/apache/sanselan/formats/tiff/datareaders/DataReader;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageMetadata$GPSInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;Lorg/apache/sanselan/common/RationalNumber;Lorg/apache/sanselan/common/RationalNumber;Lorg/apache/sanselan/common/RationalNumber;Lorg/apache/sanselan/common/RationalNumber;Lorg/apache/sanselan/common/RationalNumber;Lorg/apache/sanselan/common/RationalNumber;)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="getLongitudeAsDegreesEast" type="()D"/>
+<method name="getLatitudeAsDegreesNorth" type="()D"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageMetadata$Item" super="org/apache/sanselan/common/ImageMetadata$Item">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)V"/>
+<method name="getTiffField" type="()Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffReader$DirectoryCollector" super="org/apache/sanselan/formats/tiff/TiffReader$Collector">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="addDirectory" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;)Z"/>
+<method name="readImageData" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffReader$FirstDirectoryCollector" super="org/apache/sanselan/formats/tiff/TiffReader$Collector">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="addDirectory" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;)Z"/>
+<method name="readImageData" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/ImageDataOffsets" super="java/lang/Object">
+<method name="&lt;init&gt;" type="([Lorg/apache/sanselan/formats/tiff/TiffElement$DataElement;[ILorg/apache/sanselan/formats/tiff/write/TiffOutputField;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffImageWriterLossless$BufferOutputStream" super="java/io/OutputStream">
+<method name="&lt;init&gt;" type="([BI)V"/>
+<method name="write" type="(I)V"/>
+<method name="write" type="([BII)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffImageWriterLossless" super="org/apache/sanselan/formats/tiff/write/TiffImageWriterBase">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="write" type="(Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffImageWriterLossy" super="org/apache/sanselan/formats/tiff/write/TiffImageWriterBase">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="write" type="(Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputItem$Value" super="org/apache/sanselan/formats/tiff/write/TiffOutputItem">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;[B)V"/>
+<method name="getItemLength" type="()I"/>
+<method name="getItemDescription" type="()Ljava/lang/String;"/>
+<method name="updateValue" type="([B)V"/>
+<method name="writeItem" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputSummary$OffsetItem" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputItem;Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/transparencyfilters/TransparencyFilter" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="filter" type="(II)I"/>
+</class>
+<class name="org/apache/sanselan/formats/transparencyfilters/TransparencyFilterGrayscale" super="org/apache/sanselan/formats/transparencyfilters/TransparencyFilter">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="filter" type="(II)I"/>
+</class>
+<class name="org/apache/sanselan/formats/transparencyfilters/TransparencyFilterIndexedColor" super="org/apache/sanselan/formats/transparencyfilters/TransparencyFilter">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="filter" type="(II)I"/>
+</class>
+<class name="org/apache/sanselan/formats/transparencyfilters/TransparencyFilterTrueColor" super="org/apache/sanselan/formats/transparencyfilters/TransparencyFilter">
+<method name="&lt;init&gt;" type="([B)V"/>
+<method name="filter" type="(II)I"/>
+</class>
+<class name="org/apache/sanselan/icc/IccConstants$1" super="org/apache/sanselan/icc/IccTagDataType">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="dump" type="(Ljava/lang/String;[B)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccConstants$2" super="org/apache/sanselan/icc/IccTagDataType">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="dump" type="(Ljava/lang/String;[B)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccConstants$3" super="org/apache/sanselan/icc/IccTagDataType">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="dump" type="(Ljava/lang/String;[B)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccConstants$4" super="org/apache/sanselan/icc/IccTagDataType">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="dump" type="(Ljava/lang/String;[B)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccConstants$5" super="org/apache/sanselan/icc/IccTagDataType">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="dump" type="(Ljava/lang/String;[B)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccTagDataType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="dump" type="(Ljava/lang/String;[B)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccTagType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;I)V"/>
+</class>
+<class name="org/apache/sanselan/ImageDump" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="dumpColorSpace" type="(Ljava/lang/String;Ljava/awt/color/ColorSpace;)V"/>
+<method name="dump" type="(Ljava/awt/image/BufferedImage;)V"/>
+<method name="dump" type="(Ljava/lang/String;Ljava/awt/image/BufferedImage;)V"/>
+<method name="dumpBIProps" type="(Ljava/lang/String;Ljava/awt/image/BufferedImage;)V"/>
+</class>
+<class name="org/apache/sanselan/ImageFormat" super="java/lang/Object">
+<method name="equals" type="(Ljava/lang/Object;)Z"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="hashCode" type="()I"/>
+<method name="getAllFormats" type="()[Lorg/apache/sanselan/ImageFormat;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/ImageInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILjava/util/ArrayList;Lorg/apache/sanselan/ImageFormat;Ljava/lang/String;ILjava/lang/String;IIFIFIZZZILjava/lang/String;)V"/>
+<method name="getBitsPerPixel" type="()I"/>
+<method name="getComments" type="()Ljava/util/ArrayList;"/>
+<method name="getFormat" type="()Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getFormatName" type="()Ljava/lang/String;"/>
+<method name="getHeight" type="()I"/>
+<method name="getMimeType" type="()Ljava/lang/String;"/>
+<method name="getNumberOfImages" type="()I"/>
+<method name="getPhysicalHeightDpi" type="()I"/>
+<method name="getPhysicalHeightInch" type="()F"/>
+<method name="getPhysicalWidthDpi" type="()I"/>
+<method name="getPhysicalWidthInch" type="()F"/>
+<method name="getWidth" type="()I"/>
+<method name="getIsProgressive" type="()Z"/>
+<method name="getColorType" type="()I"/>
+<method name="getColorTypeDescription" type="()Ljava/lang/String;"/>
+<method name="dump" type="()V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/io/PrintWriter;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/ImageReadException" super="org/apache/sanselan/SanselanException">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/Exception;)V"/>
+</class>
+<class name="org/apache/sanselan/ImageWriteException" super="org/apache/sanselan/SanselanException">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/Exception;)V"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer$ColorCount" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="hashCode" type="()I"/>
+<method name="equals" type="(Ljava/lang/Object;)Z"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer$ColorGroup" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/MedianCutQuantizer;Ljava/util/ArrayList;)V"/>
+<method name="contains" type="(I)Z"/>
+<method name="getMedianValue" type="()I"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer$ColorGroupCut" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/MedianCutQuantizer;Lorg/apache/sanselan/palette/MedianCutQuantizer$ColorGroup;Lorg/apache/sanselan/palette/MedianCutQuantizer$ColorGroup;II)V"/>
+<method name="getColorGroup" type="(I)Lorg/apache/sanselan/palette/MedianCutQuantizer$ColorGroup;"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer$MedianCutPalette" super="org/apache/sanselan/palette/SimplePalette">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/MedianCutQuantizer;Lorg/apache/sanselan/palette/MedianCutQuantizer$ColorGroup;[I)V"/>
+<method name="getPaletteIndex" type="(I)I"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="groupColors1" type="(Ljava/awt/image/BufferedImage;II)Ljava/util/Map;"/>
+<method name="groupColors" type="(Ljava/awt/image/BufferedImage;I)Ljava/util/Map;"/>
+<method name="process" type="(Ljava/awt/image/BufferedImage;IZ)Lorg/apache/sanselan/palette/Palette;"/>
+<method name="access$000" type="(Lorg/apache/sanselan/palette/MedianCutQuantizer;)Z" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/palette/Palette" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getPaletteIndex" type="(I)I"/>
+<method name="getEntry" type="(I)I"/>
+<method name="length" type="()I"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/palette/PaletteFactory$DivisionCandidate" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/ColorSpaceSubset;Lorg/apache/sanselan/palette/ColorSpaceSubset;Lorg/apache/sanselan/palette/ColorSpaceSubset;)V"/>
+<method name="access$000" type="(Lorg/apache/sanselan/palette/PaletteFactory$DivisionCandidate;)Lorg/apache/sanselan/palette/ColorSpaceSubset;" class_method="true"/>
+<method name="access$100" type="(Lorg/apache/sanselan/palette/PaletteFactory$DivisionCandidate;)Lorg/apache/sanselan/palette/ColorSpaceSubset;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/palette/PaletteFactory" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="makePaletteFancy" type="(Ljava/awt/image/BufferedImage;)V"/>
+<method name="makePaletteQuantized" type="(Ljava/awt/image/BufferedImage;I)Lorg/apache/sanselan/palette/Palette;"/>
+<method name="makePaletteSimple" type="(Ljava/awt/image/BufferedImage;I)Lorg/apache/sanselan/palette/SimplePalette;"/>
+<method name="isGrayscale" type="(Ljava/awt/image/BufferedImage;)Z"/>
+<method name="hasTransparency" type="(Ljava/awt/image/BufferedImage;)Z"/>
+<method name="hasTransparency" type="(Ljava/awt/image/BufferedImage;I)Z"/>
+<method name="countTrasparentColors" type="([I)I"/>
+<method name="countTransparentColors" type="(Ljava/awt/image/BufferedImage;)I"/>
+</class>
+<class name="org/apache/sanselan/palette/QuantizedPalette" super="org/apache/sanselan/palette/Palette">
+<method name="&lt;init&gt;" type="(Ljava/util/ArrayList;I)V"/>
+<method name="getPaletteIndex" type="(I)I"/>
+<method name="dump" type="()V"/>
+<method name="getEntry" type="(I)I"/>
+<method name="length" type="()I"/>
+</class>
+<class name="org/apache/sanselan/palette/SimplePalette" super="org/apache/sanselan/palette/Palette">
+<method name="&lt;init&gt;" type="([I)V"/>
+<method name="getPaletteIndex" type="(I)I"/>
+<method name="getEntry" type="(I)I"/>
+<method name="dump" type="()V"/>
+<method name="length" type="()I"/>
+</class>
+<class name="org/apache/sanselan/SanselanException" super="java/lang/Exception">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/Exception;)V"/>
+</class>
+<class name="org/apache/sanselan/util/CachingInputStream" super="java/io/InputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;)V"/>
+<method name="getCache" type="()[B"/>
+<method name="read" type="()I"/>
+<method name="available" type="()I"/>
+<method name="close" type="()V"/>
+</class>
+<class name="org/apache/sanselan/util/CachingOutputStream" super="java/io/OutputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/OutputStream;)V"/>
+<method name="write" type="(I)V"/>
+<method name="getCache" type="()[B"/>
+<method name="close" type="()V"/>
+<method name="flush" type="()V"/>
+</class>
+<class name="org/apache/sanselan/util/Debug" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="debug" type="(Ljava/lang/String;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/Object;)V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;)Ljava/lang/String;" class_method="true"/>
+<method name="debug" type="()V" class_method="true"/>
+<method name="newline" type="()V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;I)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;D)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;J)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;[I)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;[B)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;[BI)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;[C)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/util/Map;)V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;" class_method="true"/>
+<method name="compare" type="(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)Z" class_method="true"/>
+<method name="compare" type="(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/ArrayList;Ljava/lang/StringBuffer;)Z" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/awt/color/ICC_Profile;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Z)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/io/File;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/util/Calendar;)Ljava/lang/String;" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/lang/Object;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;[Ljava/lang/Object;)V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;" class_method="true"/>
+<method name="getType" type="(Ljava/lang/Object;)Ljava/lang/String;" class_method="true"/>
+<method name="isArray" type="(Ljava/lang/Object;)Z" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/Class;Ljava/lang/Throwable;)Ljava/lang/String;" class_method="true"/>
+<method name="debug" type="(Ljava/lang/Class;Ljava/lang/Throwable;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Z)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;[B)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;[C)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/util/Calendar;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/util/Date;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;D)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/io/File;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/awt/color/ICC_Profile;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;I)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;[I)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;[BI)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/util/List;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;J)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/awt/Point;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/awt/Rectangle;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/lang/String;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/lang/Throwable;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/Throwable;)V" class_method="true"/>
+<method name="debug" type="(Ljava/lang/Throwable;I)V" class_method="true"/>
+<method name="dumpStack" type="()V" class_method="true"/>
+<method name="dumpStack" type="(I)V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/Throwable;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/Throwable;I)Ljava/lang/String;" class_method="true"/>
+<method name="getStackTrace" type="(Ljava/lang/Throwable;)Ljava/lang/String;" class_method="true"/>
+<method name="getStackTrace" type="(Ljava/lang/Throwable;I)Ljava/lang/String;" class_method="true"/>
+<method name="getStackTrace" type="(Ljava/lang/Throwable;II)Ljava/lang/String;" class_method="true"/>
+<method name="debugByteQuad" type="(Ljava/lang/String;I)V" class_method="true"/>
+<method name="debugIPQuad" type="(Ljava/lang/String;I)V" class_method="true"/>
+<method name="debugIPQuad" type="(Ljava/lang/String;[B)V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/awt/Dimension;)Ljava/lang/String;" class_method="true"/>
+<method name="debug" type="(Ljava/lang/String;Ljava/awt/Dimension;)V" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/awt/Rectangle;)Ljava/lang/String;" class_method="true"/>
+<method name="getDebug" type="(Ljava/lang/String;Ljava/awt/Point;)Ljava/lang/String;" class_method="true"/>
+<method name="dump" type="(Ljava/lang/String;Ljava/lang/Object;)V" class_method="true"/>
+<method name="purgeMemory" type="()V" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/util/DebugInputStream" super="java/io/InputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;)V"/>
+<method name="read" type="()I"/>
+<method name="skip" type="(J)J"/>
+<method name="available" type="()I"/>
+<method name="close" type="()V"/>
+<method name="getBytesRead" type="()J"/>
+</class>
+<class name="org/apache/sanselan/util/DebugOutputStream" super="java/io/OutputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/OutputStream;)V"/>
+<method name="write" type="(I)V"/>
+<method name="write" type="([B)V"/>
+<method name="write" type="([BII)V"/>
+<method name="flush" type="()V"/>
+<method name="close" type="()V"/>
+<method name="count" type="()J"/>
+</class>
+<class name="org/apache/sanselan/util/ParamMap" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getParamBoolean" type="(Ljava/util/Map;Ljava/lang/Object;Z)Z" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$1" super="java/lang/Object">
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$UnicodeException" super="java/lang/Exception">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsASCII" super="org/apache/sanselan/util/UnicodeUtils">
+<method name="findEnd" type="([BIZ)I"/>
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/util/UnicodeUtils$1;)V"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsUTF16" super="org/apache/sanselan/util/UnicodeUtils">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="isValid" type="([BIZZ)Z"/>
+<method name="findEnd" type="([BIZ)I"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsUTF16NoBOM" super="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsUTF16">
+<method name="&lt;init&gt;" type="(I)V"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsUTF16WithBOM" super="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsUTF16">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="findEnd" type="([BIZ)I"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils$UnicodeMetricsUTF8" super="org/apache/sanselan/util/UnicodeUtils">
+<method name="findEnd" type="([BIZ)I"/>
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/util/UnicodeUtils$1;)V"/>
+</class>
+<class name="org/apache/sanselan/common/BinaryFileFunctions" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="setDebug" type="(Z)V"/>
+<method name="getDebug" type="()Z"/>
+<method name="readRandomBytes" type="(Ljava/io/InputStream;)V"/>
+<method name="debugNumber" type="(Ljava/lang/String;I)V"/>
+<method name="debugNumber" type="(Ljava/lang/String;II)V"/>
+<method name="debugNumber" type="(Ljava/io/PrintWriter;Ljava/lang/String;I)V"/>
+<method name="debugNumber" type="(Ljava/io/PrintWriter;Ljava/lang/String;II)V"/>
+<method name="startsWith" type="([B[B)Z"/>
+<method name="readBytes" type="(Ljava/io/InputStream;I)[B"/>
+<method name="readAndVerifyBytes" type="(Ljava/io/InputStream;[BLjava/lang/String;)V"/>
+<method name="readAndVerifyBytes" type="(Ljava/lang/String;Ljava/io/InputStream;[BLjava/lang/String;)V"/>
+<method name="skipBytes" type="(Ljava/io/InputStream;ILjava/lang/String;)V"/>
+<method name="scanForByte" type="(Ljava/io/InputStream;B)V"/>
+<method name="readByte" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)B"/>
+<method name="convertByteArrayToRationalArray" type="(Ljava/lang/String;[BIII)[Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="convertByteArrayToRational" type="(Ljava/lang/String;[BI)Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="convertByteArrayToRational" type="(Ljava/lang/String;[BII)Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;[BI)I"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;[BII)I"/>
+<method name="convertByteArrayToIntArray" type="(Ljava/lang/String;[BIII)[I"/>
+<method name="writeIntInToByteArray" type="(I[BII)V"/>
+<method name="int2ToByteArray" type="(II)[B" class_method="true"/>
+<method name="convertIntArrayToByteArray" type="([II)[B"/>
+<method name="convertShortArrayToByteArray" type="([II)[B"/>
+<method name="convertShortToByteArray" type="(II)[B"/>
+<method name="convertIntArrayToRationalArray" type="([I[II)[B"/>
+<method name="convertRationalArrayToByteArray" type="([Lorg/apache/sanselan/common/RationalNumber;I)[B"/>
+<method name="convertRationalToByteArray" type="(Lorg/apache/sanselan/common/RationalNumber;I)[B"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;[BI)I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;I[BI)I"/>
+<method name="convertByteArrayToShortArray" type="(Ljava/lang/String;[BIII)[I"/>
+<method name="readByteArray" type="(Ljava/lang/String;ILjava/io/InputStream;)[B"/>
+<method name="readByteArray" type="(Ljava/lang/String;ILjava/io/InputStream;Ljava/lang/String;)[B"/>
+<method name="debugByteArray" type="(Ljava/lang/String;[B)V"/>
+<method name="debugNumberArray" type="(Ljava/lang/String;[II)V"/>
+<method name="readBytearray" type="(Ljava/lang/String;[BII)[B"/>
+<method name="getByteArrayTail" type="(Ljava/lang/String;[BI)[B"/>
+<method name="getBytearrayHead" type="(Ljava/lang/String;[BI)[B"/>
+<method name="slice" type="([BII)[B" class_method="true"/>
+<method name="tail" type="([BI)[B" class_method="true"/>
+<method name="head" type="([BI)[B" class_method="true"/>
+<method name="compareByteArrays" type="([B[B)Z"/>
+<method name="compareByteArrays" type="([BI[BII)Z"/>
+<method name="compareBytes" type="([B[B)Z" class_method="true"/>
+<method name="compareBytes" type="([BI[BII)Z" class_method="true"/>
+<method name="read4Bytes" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;I)I"/>
+<method name="read3Bytes" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;I)I"/>
+<method name="read2Bytes" type="(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;I)I"/>
+<method name="printCharQuad" type="(Ljava/lang/String;I)V"/>
+<method name="printCharQuad" type="(Ljava/io/PrintWriter;Ljava/lang/String;I)V"/>
+<method name="printByteBits" type="(Ljava/lang/String;B)V"/>
+<method name="CharsToQuad" type="(CCCC)I" class_method="true"/>
+<method name="findNull" type="([B)I"/>
+<method name="findNull" type="([BI)I"/>
+<method name="getRAFBytes" type="(Ljava/io/RandomAccessFile;JILjava/lang/String;)[B"/>
+<method name="convertByteArrayToFloat" type="(Ljava/lang/String;[BI)F"/>
+<method name="convertByteArrayToFloat" type="(Ljava/lang/String;[BII)F"/>
+<method name="convertByteArrayToFloatArray" type="(Ljava/lang/String;[BIII)[F"/>
+<method name="convertFloatToByteArray" type="(FI)[B"/>
+<method name="convertFloatArrayToByteArray" type="([FI)[B"/>
+<method name="convertDoubleToByteArray" type="(DI)[B"/>
+<method name="convertDoubleArrayToByteArray" type="([DI)[B"/>
+<method name="convertByteArrayToDouble" type="(Ljava/lang/String;[BI)D"/>
+<method name="convertByteArrayToDouble" type="(Ljava/lang/String;[BII)D"/>
+<method name="convertByteArrayToDoubleArray" type="(Ljava/lang/String;[BIII)[D"/>
+<method name="skipBytes" type="(Ljava/io/InputStream;I)V"/>
+<method name="copyStreamToStream" type="(Ljava/io/InputStream;Ljava/io/OutputStream;)V"/>
+<method name="getStreamBytes" type="(Ljava/io/InputStream;)[B"/>
+</class>
+<class name="org/apache/sanselan/common/BinaryInputStream" super="java/io/InputStream">
+<method name="setDebug" type="(Z)V"/>
+<method name="getDebug" type="()Z"/>
+<method name="&lt;init&gt;" type="([BI)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;I)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;)V"/>
+<method name="setByteOrder" type="(II)V"/>
+<method name="setByteOrder" type="(I)V"/>
+<method name="getByteOrder" type="()I"/>
+<method name="read" type="()I"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;[B)I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;[B)I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;I[B)I"/>
+<method name="read4Bytes" type="(Ljava/lang/String;Ljava/lang/String;)I"/>
+<method name="read3Bytes" type="(Ljava/lang/String;Ljava/lang/String;)I"/>
+<method name="read2Bytes" type="(Ljava/lang/String;Ljava/lang/String;)I"/>
+<method name="readRandomBytes" type="()V"/>
+<method name="debugNumber" type="(Ljava/lang/String;I)V"/>
+<method name="debugNumber" type="(Ljava/lang/String;II)V"/>
+<method name="readAndVerifyBytes" type="([BLjava/lang/String;)V"/>
+<method name="readAndVerifyBytes" type="(Ljava/lang/String;[BLjava/lang/String;)V"/>
+<method name="skipBytes" type="(ILjava/lang/String;)V"/>
+<method name="scanForByte" type="(B)V"/>
+<method name="readByte" type="(Ljava/lang/String;Ljava/lang/String;)B"/>
+<method name="convertByteArrayToRationalArray" type="(Ljava/lang/String;[BIII)[Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="convertByteArrayToRational" type="(Ljava/lang/String;[BI)Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="convertByteArrayToRational" type="(Ljava/lang/String;[BII)Lorg/apache/sanselan/common/RationalNumber;"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;[BI)I"/>
+<method name="convertByteArrayToInt" type="(Ljava/lang/String;[BIII)I"/>
+<method name="convertByteArrayToIntArray" type="(Ljava/lang/String;[BIII)[I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;[BI)I"/>
+<method name="convertByteArrayToShort" type="(Ljava/lang/String;I[BI)I"/>
+<method name="convertByteArrayToShortArray" type="(Ljava/lang/String;[BIII)[I"/>
+<method name="readByteArray" type="(Ljava/lang/String;ILjava/lang/String;)[B"/>
+<method name="debugByteArray" type="(Ljava/lang/String;[B)V"/>
+<method name="debugNumberArray" type="(Ljava/lang/String;[II)V"/>
+<method name="readBytearray" type="(Ljava/lang/String;[BII)[B"/>
+<method name="readByteArray" type="(ILjava/lang/String;)[B"/>
+<method name="readByteArray" type="(ILjava/lang/String;ZZ)[B"/>
+<method name="getBytearrayTail" type="(Ljava/lang/String;[BI)[B"/>
+<method name="getBytearrayHead" type="(Ljava/lang/String;[BI)[B"/>
+<method name="compareByteArrays" type="([BI[BII)Z"/>
+<method name="read4Bytes" type="(Ljava/lang/String;Ljava/lang/String;I)I"/>
+<method name="read3Bytes" type="(Ljava/lang/String;Ljava/lang/String;I)I"/>
+<method name="read2Bytes" type="(Ljava/lang/String;Ljava/lang/String;I)I"/>
+<method name="read1ByteInteger" type="(Ljava/lang/String;)I"/>
+<method name="read2ByteInteger" type="(Ljava/lang/String;)I"/>
+<method name="read4ByteInteger" type="(Ljava/lang/String;)I"/>
+<method name="printCharQuad" type="(Ljava/lang/String;I)V"/>
+<method name="printByteBits" type="(Ljava/lang/String;B)V"/>
+<method name="CharsToQuad" type="(CCCC)I" class_method="true"/>
+<method name="findNull" type="([B)I"/>
+<method name="findNull" type="([BI)I"/>
+<method name="getRAFBytes" type="(Ljava/io/RandomAccessFile;JILjava/lang/String;)[B"/>
+<method name="skipBytes" type="(I)V"/>
+</class>
+<class name="org/apache/sanselan/common/BinaryOutputStream" super="java/io/OutputStream">
+<method name="setDebug" type="(Z)V"/>
+<method name="getDebug" type="()Z"/>
+<method name="&lt;init&gt;" type="(Ljava/io/OutputStream;I)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/OutputStream;)V"/>
+<method name="setByteOrder" type="(II)V"/>
+<method name="setByteOrder" type="(I)V"/>
+<method name="getByteOrder" type="()I"/>
+<method name="write" type="(I)V"/>
+<method name="getByteCount" type="()I"/>
+<method name="write4Bytes" type="(I)V"/>
+<method name="write3Bytes" type="(I)V"/>
+<method name="write2Bytes" type="(I)V"/>
+<method name="write4ByteInteger" type="(I)V"/>
+<method name="write2ByteInteger" type="(I)V"/>
+<method name="writeByteArray" type="([B)V"/>
+</class>
+<class name="org/apache/sanselan/common/BitInputStream" super="java/io/InputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;)V"/>
+<method name="read" type="()I"/>
+<method name="readBits" type="(I)I"/>
+<method name="flushCache" type="()V"/>
+<method name="getBytesRead" type="()J"/>
+</class>
+<class name="org/apache/sanselan/common/BitInputStreamFlexible" super="java/io/InputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;)V"/>
+<method name="read" type="()I"/>
+<method name="readBits" type="(I)I"/>
+<method name="flushCache" type="()V"/>
+<method name="getBytesRead" type="()J"/>
+</class>
+<class name="org/apache/sanselan/common/ImageMetadata$Item" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="getKeyword" type="()Ljava/lang/String;"/>
+<method name="getText" type="()Ljava/lang/String;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/ImageMetadata" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="add" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="add" type="(Lorg/apache/sanselan/common/IImageMetadata$IImageMetadataItem;)V"/>
+<method name="getItems" type="()Ljava/util/ArrayList;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/common/mylzw/MyBitInputStream" super="java/io/InputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;I)V"/>
+<method name="read" type="()I"/>
+<method name="setTiffLZWMode" type="()V"/>
+<method name="readBits" type="(I)I"/>
+<method name="flushCache" type="()V"/>
+<method name="getBytesRead" type="()J"/>
+</class>
+<class name="org/apache/sanselan/common/mylzw/MyBitOutputStream" super="java/io/OutputStream">
+<method name="&lt;init&gt;" type="(Ljava/io/OutputStream;I)V"/>
+<method name="write" type="(I)V"/>
+<method name="writeBits" type="(II)V"/>
+<method name="flushCache" type="()V"/>
+<method name="getBytesWritten" type="()I"/>
+</class>
+<class name="org/apache/sanselan/common/RgbBufferedImageFactory" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getColorBufferedImage" type="(IIZ)Ljava/awt/image/BufferedImage;"/>
+<method name="getGrayscaleBufferedImage" type="(IIZ)Ljava/awt/image/BufferedImage;"/>
+</class>
+<class name="org/apache/sanselan/common/SimpleBufferedImageFactory" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getColorBufferedImage" type="(IIZ)Ljava/awt/image/BufferedImage;"/>
+<method name="getGrayscaleBufferedImage" type="(IIZ)Ljava/awt/image/BufferedImage;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter;Ljava/util/ArrayList;Ljava/util/List;)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/exifRewrite/ExifRewriter" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="removeExifMetadata" type="(Ljava/io/File;Ljava/io/OutputStream;)V"/>
+<method name="removeExifMetadata" type="([BLjava/io/OutputStream;)V"/>
+<method name="removeExifMetadata" type="(Ljava/io/InputStream;Ljava/io/OutputStream;)V"/>
+<method name="removeExifMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;)V"/>
+<method name="updateExifMetadataLossless" type="(Ljava/io/File;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossless" type="([BLjava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossless" type="(Ljava/io/InputStream;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossless" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossy" type="([BLjava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossy" type="(Ljava/io/InputStream;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossy" type="(Ljava/io/File;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="updateExifMetadataLossy" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCParser$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/iptc/IPTCParser;)V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCParser" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="isPhotoshopJpegSegment" type="([B)Z"/>
+<method name="parsePhotoshopSegment" type="([BLjava/util/Map;)Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;"/>
+<method name="parsePhotoshopSegment" type="([BZZ)Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;"/>
+<method name="parseIPTCBlock" type="([BZ)Ljava/util/List;"/>
+<method name="parseAllBlocks" type="([BZZ)Ljava/util/List;"/>
+<method name="writePhotoshopApp13Segment" type="(Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;)[B"/>
+<method name="writeIPTCBlock" type="(Ljava/util/List;)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCRecord$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="getUnknown" type="(I)Lorg/apache/sanselan/formats/jpeg/iptc/IPTCType;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/IPTCTypeLookup" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getIptcType" type="(I)Lorg/apache/sanselan/formats/jpeg/iptc/IPTCType;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/JpegIptcRewriter" super="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="removeIPTC" type="(Ljava/io/File;Ljava/io/OutputStream;)V"/>
+<method name="removeIPTC" type="([BLjava/io/OutputStream;)V"/>
+<method name="removeIPTC" type="(Ljava/io/InputStream;Ljava/io/OutputStream;)V"/>
+<method name="removeIPTC" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;)V"/>
+<method name="writeIPTC" type="([BLjava/io/OutputStream;Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;)V"/>
+<method name="writeIPTC" type="(Ljava/io/InputStream;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;)V"/>
+<method name="writeIPTC" type="(Ljava/io/File;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;)V"/>
+<method name="writeIPTC" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/io/OutputStream;Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/util/List;Ljava/util/List;)V"/>
+<method name="getRecords" type="()Ljava/util/List;"/>
+<method name="getRawBlocks" type="()Ljava/util/List;"/>
+<method name="getNonIptcBlocks" type="()Ljava/util/List;"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageMetadata" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegPhotoshopMetadata;Lorg/apache/sanselan/formats/tiff/TiffImageMetadata;)V"/>
+<method name="getExif" type="()Lorg/apache/sanselan/formats/tiff/TiffImageMetadata;"/>
+<method name="getPhotoshop" type="()Lorg/apache/sanselan/formats/jpeg/JpegPhotoshopMetadata;"/>
+<method name="findEXIFValue" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+<method name="getEXIFThumbnail" type="()Ljava/awt/image/BufferedImage;"/>
+<method name="getRawImageData" type="()Lorg/apache/sanselan/formats/tiff/TiffImageData;"/>
+<method name="getItems" type="()Ljava/util/ArrayList;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageParser$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;[ILjava/util/ArrayList;Lorg/apache/sanselan/formats/jpeg/JpegImageParser;Z)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageParser$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;[Z)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageParser$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;[Z)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageParser$4" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;[Z)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageParser$5" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;Ljava/util/List;)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="readSegments" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;[IZZ)Ljava/util/ArrayList;"/>
+<method name="readSegments" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;[IZ)Ljava/util/ArrayList;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="isExifAPP1Segment" type="(Lorg/apache/sanselan/formats/jpeg/segments/GenericSegment;)Z" class_method="true"/>
+<method name="getExifMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/formats/tiff/TiffImageMetadata;"/>
+<method name="getExifRawData" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)[B"/>
+<method name="hasExifSegment" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="hasIptcSegment" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="hasXmpSegment" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+<method name="getPhotoshopMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/formats/jpeg/JpegPhotoshopMetadata;"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="access$000" type="(Lorg/apache/sanselan/formats/jpeg/JpegImageParser;I[I)Z" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegPhotoshopMetadata" super="org/apache/sanselan/common/ImageMetadata">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/iptc/PhotoshopApp13Data;)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegUtils$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/JpegUtils;)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/JpegUtils" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="traverseJFIF" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Lorg/apache/sanselan/formats/jpeg/JpegUtils$Visitor;)V"/>
+<method name="getMarkerName" type="(I)Ljava/lang/String;" class_method="true"/>
+<method name="dumpJFIF" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/App2Segment" super="org/apache/sanselan/formats/jpeg/segments/APPNSegment">
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+<method name="compareTo" type="(Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/segments/JFIFSegment" super="org/apache/sanselan/formats/jpeg/segments/Segment">
+<method name="getDescription" type="()Ljava/lang/String;"/>
+<method name="&lt;init&gt;" type="(I[B)V"/>
+<method name="&lt;init&gt;" type="(IILjava/io/InputStream;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter;Ljava/util/ArrayList;Ljava/util/List;)V"/>
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="filter" type="(Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieceSegment;)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="filter" type="(Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieceSegment;)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$4" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="filter" type="(Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieceSegment;)Z"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="analyzeJFIF" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieces;"/>
+<method name="removeXmpSegments" type="(Ljava/util/List;)Ljava/util/List;"/>
+<method name="removePhotoshopApp13Segments" type="(Ljava/util/List;)Ljava/util/List;"/>
+<method name="findPhotoshopApp13Segments" type="(Ljava/util/List;)Ljava/util/List;"/>
+<method name="removeExifSegments" type="(Ljava/util/List;)Ljava/util/List;"/>
+<method name="filterSegments" type="(Ljava/util/List;Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$SegmentFilter;)Ljava/util/List;"/>
+<method name="filterSegments" type="(Ljava/util/List;Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$SegmentFilter;Z)Ljava/util/List;"/>
+<method name="insertBeforeFirstAppSegments" type="(Ljava/util/List;Ljava/util/List;)Ljava/util/List;"/>
+<method name="insertAfterLastAppSegments" type="(Ljava/util/List;Ljava/util/List;)Ljava/util/List;"/>
+<method name="writeSegments" type="(Ljava/io/OutputStream;Ljava/util/List;)V"/>
+<method name="access$000" type="(II)[B" class_method="true"/>
+<method name="access$100" type="(II)[B" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/jpeg/xmp/JpegXmpParser" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="isXmpJpegSegment" type="([B)Z"/>
+<method name="parseXmpJpegSegment" type="([B)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/png/PngWriter" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="&lt;init&gt;" type="(Ljava/util/Map;)V"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PBMWriter" super="org/apache/sanselan/formats/pnm/PNMWriter">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/pnm/PNMImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/formats/psd/datareaders/DataReader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/psd/dataparsers/DataParser;)V"/>
+<method name="readData" type="(Ljava/io/InputStream;Ljava/awt/image/BufferedImage;Lorg/apache/sanselan/formats/psd/ImageContents;Lorg/apache/sanselan/common/BinaryFileParser;)V"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagConstantsUtils" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="mergeTagLists" type="([[Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)[Lorg/apache/sanselan/formats/tiff/constants/TagInfo;" class_method="true"/>
+<method name="getExifDirectoryType" type="(I)Lorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/constants/TagInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;I)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I[Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;ILorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I[Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILjava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I[Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;ILorg/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants$ExifDirectoryType;)V"/>
+<method name="getValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="encodeValue" type="(Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;Ljava/lang/Object;I)[B"/>
+<method name="getDescription" type="()Ljava/lang/String;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="isDate" type="()Z"/>
+<method name="isOffset" type="()Z"/>
+<method name="isText" type="()Z"/>
+<method name="isUnknown" type="()Z"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/datareaders/DataReader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/photometricinterpreters/PhotometricInterpreter;[III)V"/>
+<method name="readImageData" type="(Ljava/awt/image/BufferedImage;)V"/>
+<method name="getSamplesAsBytes" type="(Lorg/apache/sanselan/common/BitInputStream;)[I"/>
+<method name="applyPredictor" type="([II)[I"/>
+<method name="decompress" type="([BII)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/fieldtypes/FieldType" super="org/apache/sanselan/common/BinaryFileFunctions">
+<method name="&lt;init&gt;" type="(IILjava/lang/String;)V"/>
+<method name="isLocalValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Z"/>
+<method name="getBytesLength" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)I"/>
+<method name="getStubLocalValue" type="()[B" class_method="true"/>
+<method name="getStubValue" type="(I)[B"/>
+<method name="getDisplayValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/String;"/>
+<method name="getRawBytes" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)[B"/>
+<method name="getSimpleValue" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Ljava/lang/Object;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="writeData" type="(Ljava/lang/Object;I)[B"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffDirectory" super="org/apache/sanselan/formats/tiff/TiffElement">
+<method name="description" type="()Ljava/lang/String;"/>
+<method name="getElementDescription" type="(Z)Ljava/lang/String;"/>
+<method name="description" type="(I)Ljava/lang/String;" class_method="true"/>
+<method name="&lt;init&gt;" type="(ILjava/util/ArrayList;II)V"/>
+<method name="getDirectoryEntrys" type="()Ljava/util/ArrayList;"/>
+<method name="fillInValues" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)V"/>
+<method name="dump" type="()V"/>
+<method name="hasJpegImageData" type="()Z"/>
+<method name="hasTiffImageData" type="()Z"/>
+<method name="getTiffImage" type="()Ljava/awt/image/BufferedImage;"/>
+<method name="getTiffImage" type="(Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;Z)Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+<method name="getTiffRawImageDataElements" type="()Ljava/util/ArrayList;"/>
+<method name="imageDataInStrips" type="()Z"/>
+<method name="getJpegRawImageDataElement" type="()Lorg/apache/sanselan/formats/tiff/TiffDirectory$ImageDataElement;"/>
+<method name="setTiffImageData" type="(Lorg/apache/sanselan/formats/tiff/TiffImageData;)V"/>
+<method name="getTiffImageData" type="()Lorg/apache/sanselan/formats/tiff/TiffImageData;"/>
+<method name="setJpegImageData" type="(Lorg/apache/sanselan/formats/tiff/JpegImageData;)V"/>
+<method name="getJpegImageData" type="()Lorg/apache/sanselan/formats/tiff/JpegImageData;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffElement$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffField" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(IIIII[BI)V"/>
+<method name="isLocalValue" type="()Z"/>
+<method name="getBytesLength" type="()I"/>
+<method name="getOversizeValueElement" type="()Lorg/apache/sanselan/formats/tiff/TiffElement;"/>
+<method name="setOversizeValue" type="([B)V"/>
+<method name="fillInValue" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)V"/>
+<method name="getValueDescription" type="()Ljava/lang/String;"/>
+<method name="dump" type="()V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;)V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;Ljava/lang/String;)V"/>
+<method name="getDescriptionWithoutValue" type="()Ljava/lang/String;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="getTagName" type="()Ljava/lang/String;"/>
+<method name="getFieldTypeName" type="()Ljava/lang/String;"/>
+<method name="getValue" type="()Ljava/lang/Object;"/>
+<method name="getStringValue" type="()Ljava/lang/String;"/>
+<method name="getIntArrayValue" type="()[I"/>
+<method name="getDoubleArrayValue" type="()[D"/>
+<method name="getIntValueOrArraySum" type="()I"/>
+<method name="getIntValue" type="()I"/>
+<method name="getDoubleValue" type="()D"/>
+<method name="getByteArrayValue" type="()[B"/>
+<method name="getSortHint" type="()I"/>
+<method name="setSortHint" type="(I)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageMetadata$Directory" super="org/apache/sanselan/common/ImageMetadata">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;)V"/>
+<method name="add" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)V"/>
+<method name="getThumbnail" type="()Ljava/awt/image/BufferedImage;"/>
+<method name="getTiffImageData" type="()Lorg/apache/sanselan/formats/tiff/TiffImageData;"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+<method name="getAllFields" type="()Ljava/util/List;"/>
+<method name="getJpegImageData" type="()Lorg/apache/sanselan/formats/tiff/JpegImageData;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+<method name="getOutputDirectory" type="(I)Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="access$000" type="(Lorg/apache/sanselan/formats/tiff/TiffImageMetadata$Directory;)Lorg/apache/sanselan/formats/tiff/TiffDirectory;" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageMetadata" super="org/apache/sanselan/common/ImageMetadata">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/TiffContents;)V"/>
+<method name="getDirectories" type="()Ljava/util/ArrayList;"/>
+<method name="getItems" type="()Ljava/util/ArrayList;"/>
+<method name="getOutputSet" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/TiffField;"/>
+<method name="findDirectory" type="(I)Lorg/apache/sanselan/formats/tiff/TiffDirectory;"/>
+<method name="getAllFields" type="()Ljava/util/List;"/>
+<method name="getGPS" type="()Lorg/apache/sanselan/formats/tiff/TiffImageMetadata$GPSInfo;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffImageParser" super="org/apache/sanselan/ImageParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="embedICCProfile" type="([B[B)[B"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="getFormatCompliance" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/FormatCompliance;"/>
+<method name="collectRawImageData" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/util/List;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffReader$Collector" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="&lt;init&gt;" type="(Ljava/util/Map;)V"/>
+<method name="setTiffHeader" type="(Lorg/apache/sanselan/formats/tiff/TiffHeader;)Z"/>
+<method name="addDirectory" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;)Z"/>
+<method name="addField" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Z"/>
+<method name="readImageData" type="()Z"/>
+<method name="readOffsetDirectories" type="()Z"/>
+<method name="getContents" type="()Lorg/apache/sanselan/formats/tiff/TiffContents;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/TiffReader" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="(Z)V"/>
+<method name="readFirstDirectory" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;ZLorg/apache/sanselan/FormatCompliance;)Lorg/apache/sanselan/formats/tiff/TiffContents;"/>
+<method name="readDirectories" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;ZLorg/apache/sanselan/FormatCompliance;)Lorg/apache/sanselan/formats/tiff/TiffContents;"/>
+<method name="readContents" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;Lorg/apache/sanselan/FormatCompliance;)Lorg/apache/sanselan/formats/tiff/TiffContents;"/>
+<method name="read" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;Lorg/apache/sanselan/FormatCompliance;Lorg/apache/sanselan/formats/tiff/TiffReader$Listener;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffImageWriterBase" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="imageDataPaddingLength" type="(I)I" class_method="true"/>
+<method name="write" type="(Ljava/io/OutputStream;Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)V"/>
+<method name="validateDirectories" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputSet;)Lorg/apache/sanselan/formats/tiff/write/TiffOutputSummary;"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+<method name="writeImageFileHeader" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+<method name="writeImageFileHeader" type="(Lorg/apache/sanselan/common/BinaryOutputStream;I)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffImageWriterLossless$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffImageWriterLossless$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputDirectory$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;)V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputDirectory" super="org/apache/sanselan/formats/tiff/write/TiffOutputItem">
+<method name="setNextDirectory" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;)V"/>
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="add" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;)V"/>
+<method name="getFields" type="()Ljava/util/ArrayList;"/>
+<method name="removeField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)V"/>
+<method name="removeField" type="(I)V"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;"/>
+<method name="findField" type="(I)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;"/>
+<method name="sortFields" type="()V"/>
+<method name="description" type="()Ljava/lang/String;"/>
+<method name="writeItem" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+<method name="setJpegImageData" type="(Lorg/apache/sanselan/formats/tiff/JpegImageData;)V"/>
+<method name="getRawJpegImageData" type="()Lorg/apache/sanselan/formats/tiff/JpegImageData;"/>
+<method name="setTiffImageData" type="(Lorg/apache/sanselan/formats/tiff/TiffImageData;)V"/>
+<method name="getRawTiffImageData" type="()Lorg/apache/sanselan/formats/tiff/TiffImageData;"/>
+<method name="getItemLength" type="()I"/>
+<method name="getItemDescription" type="()Ljava/lang/String;"/>
+<method name="getOutputItems" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputSummary;)Ljava/util/List;"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputField" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;I[B)V"/>
+<method name="&lt;init&gt;" type="(ILorg/apache/sanselan/formats/tiff/constants/TagInfo;Lorg/apache/sanselan/formats/tiff/fieldtypes/FieldType;I[B)V"/>
+<method name="create" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;ILjava/lang/Number;)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;" class_method="true"/>
+<method name="create" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;I[Ljava/lang/Number;)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;" class_method="true"/>
+<method name="create" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;ILjava/lang/String;)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;" class_method="true"/>
+<method name="createOffsetField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;I)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;" class_method="true"/>
+<method name="writeField" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+<method name="getSeperateValue" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputItem;"/>
+<method name="isLocalValue" type="()Z"/>
+<method name="setData" type="([B)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+<method name="getSortHint" type="()I"/>
+<method name="setSortHint" type="(I)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputItem" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getOffset" type="()I"/>
+<method name="setOffset" type="(I)V"/>
+<method name="getItemLength" type="()I"/>
+<method name="getItemDescription" type="()Ljava/lang/String;"/>
+<method name="writeItem" type="(Lorg/apache/sanselan/common/BinaryOutputStream;)V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputSet" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="getOutputItems" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputSummary;)Ljava/util/List;"/>
+<method name="addDirectory" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;)V"/>
+<method name="getDirectories" type="()Ljava/util/List;"/>
+<method name="getRootDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="getExifDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="getOrCreateRootDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="getOrCreateExifDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="getOrCreateGPSDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="getGPSDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="getInteroperabilityDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="findDirectory" type="(I)Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="setGPSInDegrees" type="(DD)V"/>
+<method name="removeField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)V"/>
+<method name="removeField" type="(I)V"/>
+<method name="findField" type="(Lorg/apache/sanselan/formats/tiff/constants/TagInfo;)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;"/>
+<method name="findField" type="(I)Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;"/>
+<method name="addRootDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="addExifDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="addGPSDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="addInteroperabilityDirectory" type="()Lorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+<method name="dump" type="()V"/>
+</class>
+<class name="org/apache/sanselan/formats/tiff/write/TiffOutputSummary" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(ILorg/apache/sanselan/formats/tiff/write/TiffOutputDirectory;Ljava/util/Map;)V"/>
+<method name="add" type="(Lorg/apache/sanselan/formats/tiff/write/TiffOutputItem;Lorg/apache/sanselan/formats/tiff/write/TiffOutputField;)V"/>
+<method name="updateOffsets" type="(I)V"/>
+<method name="addTiffImageData" type="(Lorg/apache/sanselan/formats/tiff/write/ImageDataOffsets;)V"/>
+</class>
+<class name="org/apache/sanselan/icc/IccProfileInfo" super="java/lang/Object">
+<method name="&lt;init&gt;" type="([BIIIIIIIIIIIII[B[Lorg/apache/sanselan/icc/IccTag;)V"/>
+<method name="issRGB" type="()Z"/>
+<method name="dump" type="(Ljava/lang/String;)V"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+</class>
+<class name="org/apache/sanselan/icc/IccProfileParser" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getICCProfileInfo" type="(Ljava/awt/color/ICC_Profile;)Lorg/apache/sanselan/icc/IccProfileInfo;"/>
+<method name="getICCProfileInfo" type="([B)Lorg/apache/sanselan/icc/IccProfileInfo;"/>
+<method name="getICCProfileInfo" type="(Ljava/io/File;)Lorg/apache/sanselan/icc/IccProfileInfo;"/>
+<method name="getICCProfileInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/icc/IccProfileInfo;"/>
+<method name="issRGB" type="(Ljava/awt/color/ICC_Profile;)Ljava/lang/Boolean;"/>
+<method name="issRGB" type="([B)Ljava/lang/Boolean;"/>
+<method name="issRGB" type="(Ljava/io/File;)Ljava/lang/Boolean;"/>
+<method name="issRGB" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Ljava/lang/Boolean;"/>
+</class>
+<class name="org/apache/sanselan/icc/IccTag" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(IIILorg/apache/sanselan/icc/IccTagType;)V"/>
+<method name="setData" type="([B)V"/>
+<method name="dump" type="(Ljava/lang/String;)V"/>
+<method name="dump" type="(Ljava/io/PrintWriter;Ljava/lang/String;)V"/>
+</class>
+<class name="org/apache/sanselan/ImageParser" super="org/apache/sanselan/common/BinaryFileParser">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getAllImageParsers" type="()[Lorg/apache/sanselan/ImageParser;" class_method="true"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getMetadata" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getMetadata" type="([B)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getMetadata" type="([BLjava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getMetadata" type="(Ljava/io/File;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getMetadata" type="(Ljava/io/File;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getImageInfo" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getImageInfo" type="([BLjava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getImageInfo" type="(Ljava/io/File;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;"/>
+<method name="getFormatCompliance" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/FormatCompliance;"/>
+<method name="getFormatCompliance" type="([B)Lorg/apache/sanselan/FormatCompliance;"/>
+<method name="getFormatCompliance" type="(Ljava/io/File;)Lorg/apache/sanselan/FormatCompliance;"/>
+<method name="getAllBufferedImages" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Ljava/util/ArrayList;"/>
+<method name="getAllBufferedImages" type="([B)Ljava/util/ArrayList;"/>
+<method name="getAllBufferedImages" type="(Ljava/io/File;)Ljava/util/ArrayList;"/>
+<method name="getBufferedImage" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="getBufferedImage" type="([BLjava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="getBufferedImage" type="(Ljava/io/File;Ljava/util/Map;)Ljava/awt/image/BufferedImage;"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Ljava/util/Map;)V"/>
+<method name="getImageSize" type="([B)Ljava/awt/Dimension;"/>
+<method name="getImageSize" type="([BLjava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="getImageSize" type="(Ljava/io/File;)Ljava/awt/Dimension;"/>
+<method name="getImageSize" type="(Ljava/io/File;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;"/>
+<method name="getICCProfileBytes" type="([B)[B"/>
+<method name="getICCProfileBytes" type="([BLjava/util/Map;)[B"/>
+<method name="getICCProfileBytes" type="(Ljava/io/File;)[B"/>
+<method name="getICCProfileBytes" type="(Ljava/io/File;Ljava/util/Map;)[B"/>
+<method name="getICCProfileBytes" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)[B"/>
+<method name="dumpImageFile" type="([B)Ljava/lang/String;"/>
+<method name="dumpImageFile" type="(Ljava/io/File;)Ljava/lang/String;"/>
+<method name="dumpImageFile" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Ljava/lang/String;"/>
+<method name="dumpImageFile" type="(Ljava/io/PrintWriter;Lorg/apache/sanselan/common/byteSources/ByteSource;)Z"/>
+<method name="embedICCProfile" type="(Ljava/io/File;Ljava/io/File;[B)Z"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getDefaultExtension" type="()Ljava/lang/String;"/>
+<method name="getAcceptedExtensions" type="()[Ljava/lang/String;"/>
+<method name="getAcceptedTypes" type="()[Lorg/apache/sanselan/ImageFormat;"/>
+<method name="canAcceptType" type="(Lorg/apache/sanselan/ImageFormat;)Z"/>
+<method name="canAcceptExtension" type="(Ljava/io/File;)Z"/>
+<method name="canAcceptExtension" type="(Ljava/lang/String;)Z"/>
+<method name="getBufferedImageFactory" type="(Ljava/util/Map;)Lorg/apache/sanselan/common/IBufferedImageFactory;"/>
+<method name="isStrict" type="(Ljava/util/Map;)Z" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/palette/ColorSpaceSubset" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="&lt;init&gt;" type="(II[I[I[I)V"/>
+<method name="contains" type="(III)Z"/>
+<method name="dump" type="(Ljava/lang/String;)V"/>
+<method name="dumpJustRGB" type="(Ljava/lang/String;)V"/>
+<method name="getArea" type="()I"/>
+<method name="setAverageRGB" type="([I)V"/>
+<method name="compareTo" type="(Ljava/lang/Object;)I"/>
+<method name="setIndex" type="(I)V"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/MedianCutQuantizer;)V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/palette/MedianCutQuantizer$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/palette/MedianCutQuantizer;I)V"/>
+<method name="compare" type="(Ljava/lang/Object;Ljava/lang/Object;)I"/>
+</class>
+<class name="org/apache/sanselan/Sanselan" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="hasImageFileExtension" type="(Ljava/io/File;)Z" class_method="true"/>
+<method name="hasImageFileExtension" type="(Ljava/lang/String;)Z" class_method="true"/>
+<method name="guessFormat" type="([B)Lorg/apache/sanselan/ImageFormat;" class_method="true"/>
+<method name="guessFormat" type="(Ljava/io/File;)Lorg/apache/sanselan/ImageFormat;" class_method="true"/>
+<method name="guessFormat" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;)Lorg/apache/sanselan/ImageFormat;" class_method="true"/>
+<method name="getICCProfile" type="([B)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfile" type="([BLjava/util/Map;)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfile" type="(Ljava/io/InputStream;Ljava/lang/String;)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfile" type="(Ljava/io/InputStream;Ljava/lang/String;Ljava/util/Map;)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfile" type="(Ljava/io/File;)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfile" type="(Ljava/io/File;Ljava/util/Map;)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfile" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/color/ICC_Profile;" class_method="true"/>
+<method name="getICCProfileBytes" type="([B)[B" class_method="true"/>
+<method name="getICCProfileBytes" type="([BLjava/util/Map;)[B" class_method="true"/>
+<method name="getICCProfileBytes" type="(Ljava/io/File;)[B" class_method="true"/>
+<method name="getICCProfileBytes" type="(Ljava/io/File;Ljava/util/Map;)[B" class_method="true"/>
+<method name="getImageInfo" type="(Ljava/lang/String;[BLjava/util/Map;)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="(Ljava/lang/String;[B)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="(Ljava/io/InputStream;Ljava/lang/String;)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="(Ljava/io/InputStream;Ljava/lang/String;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="([B)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="([BLjava/util/Map;)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="(Ljava/io/File;Ljava/util/Map;)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageInfo" type="(Ljava/io/File;)Lorg/apache/sanselan/ImageInfo;" class_method="true"/>
+<method name="getImageSize" type="(Ljava/io/InputStream;Ljava/lang/String;)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getImageSize" type="(Ljava/io/InputStream;Ljava/lang/String;Ljava/util/Map;)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getImageSize" type="([B)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getImageSize" type="([BLjava/util/Map;)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getImageSize" type="(Ljava/io/File;)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getImageSize" type="(Ljava/io/File;Ljava/util/Map;)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getImageSize" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/awt/Dimension;" class_method="true"/>
+<method name="getXmpXml" type="(Ljava/io/InputStream;Ljava/lang/String;)Ljava/lang/String;" class_method="true"/>
+<method name="getXmpXml" type="(Ljava/io/InputStream;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;" class_method="true"/>
+<method name="getXmpXml" type="([B)Ljava/lang/String;" class_method="true"/>
+<method name="getXmpXml" type="([BLjava/util/Map;)Ljava/lang/String;" class_method="true"/>
+<method name="getXmpXml" type="(Ljava/io/File;)Ljava/lang/String;" class_method="true"/>
+<method name="getXmpXml" type="(Ljava/io/File;Ljava/util/Map;)Ljava/lang/String;" class_method="true"/>
+<method name="getXmpXml" type="(Lorg/apache/sanselan/common/byteSources/ByteSource;Ljava/util/Map;)Ljava/lang/String;" class_method="true"/>
+<method name="getMetadata" type="([B)Lorg/apache/sanselan/common/IImageMetadata;" class_method="true"/>
+<method name="getMetadata" type="([BLjava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;" class_method="true"/>
+<method name="getMetadata" type="(Ljava/io/InputStream;Ljava/lang/String;)Lorg/apache/sanselan/common/IImageMetadata;" class_method="true"/>
+<method name="getMetadata" type="(Ljava/io/InputStream;Ljava/lang/String;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;" class_method="true"/>
+<method name="getMetadata" type="(Ljava/io/File;)Lorg/apache/sanselan/common/IImageMetadata;" class_method="true"/>
+<method name="getMetadata" type="(Ljava/io/File;Ljava/util/Map;)Lorg/apache/sanselan/common/IImageMetadata;" class_method="true"/>
+<method name="dumpImageFile" type="([B)Ljava/lang/String;" class_method="true"/>
+<method name="dumpImageFile" type="(Ljava/io/File;)Ljava/lang/String;" class_method="true"/>
+<method name="getFormatCompliance" type="([B)Lorg/apache/sanselan/FormatCompliance;" class_method="true"/>
+<method name="getFormatCompliance" type="(Ljava/io/File;)Lorg/apache/sanselan/FormatCompliance;" class_method="true"/>
+<method name="getAllBufferedImages" type="(Ljava/io/InputStream;Ljava/lang/String;)Ljava/util/ArrayList;" class_method="true"/>
+<method name="getAllBufferedImages" type="([B)Ljava/util/ArrayList;" class_method="true"/>
+<method name="getAllBufferedImages" type="(Ljava/io/File;)Ljava/util/ArrayList;" class_method="true"/>
+<method name="getBufferedImage" type="(Ljava/io/InputStream;)Ljava/awt/image/BufferedImage;" class_method="true"/>
+<method name="getBufferedImage" type="(Ljava/io/InputStream;Ljava/util/Map;)Ljava/awt/image/BufferedImage;" class_method="true"/>
+<method name="getBufferedImage" type="([B)Ljava/awt/image/BufferedImage;" class_method="true"/>
+<method name="getBufferedImage" type="([BLjava/util/Map;)Ljava/awt/image/BufferedImage;" class_method="true"/>
+<method name="getBufferedImage" type="(Ljava/io/File;)Ljava/awt/image/BufferedImage;" class_method="true"/>
+<method name="getBufferedImage" type="(Ljava/io/File;Ljava/util/Map;)Ljava/awt/image/BufferedImage;" class_method="true"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/File;Lorg/apache/sanselan/ImageFormat;Ljava/util/Map;)V" class_method="true"/>
+<method name="writeImageToBytes" type="(Ljava/awt/image/BufferedImage;Lorg/apache/sanselan/ImageFormat;Ljava/util/Map;)[B" class_method="true"/>
+<method name="writeImage" type="(Ljava/awt/image/BufferedImage;Ljava/io/OutputStream;Lorg/apache/sanselan/ImageFormat;Ljava/util/Map;)V" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/util/IOUtils" super="java/lang/Object">
+<method name="getInputStreamBytes" type="(Ljava/io/InputStream;)[B" class_method="true"/>
+<method name="getFileBytes" type="(Ljava/io/File;)[B" class_method="true"/>
+<method name="writeToFile" type="([BLjava/io/File;)V" class_method="true"/>
+<method name="putInputStreamToFile" type="(Ljava/io/InputStream;Ljava/io/File;)V" class_method="true"/>
+<method name="copyStreamToStream" type="(Ljava/io/InputStream;Ljava/io/OutputStream;)V" class_method="true"/>
+<method name="copyStreamToStream" type="(Ljava/io/InputStream;Ljava/io/OutputStream;Z)V" class_method="true"/>
+<method name="copyFileNio" type="(Ljava/io/File;Ljava/io/File;)Z" class_method="true"/>
+</class>
+<class name="org/apache/sanselan/util/UnicodeUtils" super="java/lang/Object">
+<method name="isValidISO_8859_1" type="(Ljava/lang/String;)Z" class_method="true"/>
+<method name="findEndWithTerminator" type="([BI)I"/>
+<method name="findEndWithoutTerminator" type="([BI)I"/>
+<method name="findEnd" type="([BIZ)I"/>
+<method name="getInstance" type="(I)Lorg/apache/sanselan/util/UnicodeUtils;" class_method="true"/>
+<method name="&lt;init&gt;" type="(Lorg/apache/sanselan/util/UnicodeUtils$1;)V"/>
+</class>
+<interface name="org/apache/sanselan/common/BinaryConstants">
+</interface>
+<interface name="org/apache/sanselan/common/IBufferedImageFactory">
+<method name="getColorBufferedImage" type="(IIZ)Ljava/awt/image/BufferedImage;"/>
+<method name="getGrayscaleBufferedImage" type="(IIZ)Ljava/awt/image/BufferedImage;"/>
+</interface>
+<interface name="org/apache/sanselan/common/IImageMetadata$IImageMetadataItem">
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</interface>
+<interface name="org/apache/sanselan/common/IImageMetadata">
+<method name="toString" type="(Ljava/lang/String;)Ljava/lang/String;"/>
+<method name="getItems" type="()Ljava/util/ArrayList;"/>
+</interface>
+<interface name="org/apache/sanselan/common/mylzw/MyLZWCompressor$Listener">
+<method name="dataCode" type="(I)V"/>
+<method name="eoiCode" type="(I)V"/>
+<method name="clearCode" type="(I)V"/>
+<method name="init" type="(II)V"/>
+</interface>
+<interface name="org/apache/sanselan/common/mylzw/MyLZWDecompressor$Listener">
+<method name="code" type="(I)V"/>
+<method name="init" type="(II)V"/>
+</interface>
+<interface name="org/apache/sanselan/formats/jpeg/JpegConstants">
+</interface>
+<interface name="org/apache/sanselan/formats/jpeg/JpegUtils$Visitor">
+<method name="beginSOS" type="()Z"/>
+<method name="visitSOS" type="(I[B[B)V"/>
+<method name="visitSegment" type="(I[BI[B[B)Z"/>
+</interface>
+<interface name="org/apache/sanselan/formats/jpeg/xmp/JpegRewriter$SegmentFilter">
+<method name="filter" type="(Lorg/apache/sanselan/formats/jpeg/xmp/JpegRewriter$JFIFPieceSegment;)Z"/>
+</interface>
+<interface name="org/apache/sanselan/formats/pnm/PNMConstants">
+</interface>
+<interface name="org/apache/sanselan/formats/tga/TgaConstants">
+</interface>
+<interface name="org/apache/sanselan/formats/tiff/constants/TiffDirectoryConstants">
+</interface>
+<interface name="org/apache/sanselan/formats/tiff/TiffReader$Listener">
+<method name="setTiffHeader" type="(Lorg/apache/sanselan/formats/tiff/TiffHeader;)Z"/>
+<method name="addDirectory" type="(Lorg/apache/sanselan/formats/tiff/TiffDirectory;)Z"/>
+<method name="addField" type="(Lorg/apache/sanselan/formats/tiff/TiffField;)Z"/>
+<method name="readImageData" type="()Z"/>
+<method name="readOffsetDirectories" type="()Z"/>
+</interface>
+<interface name="org/apache/sanselan/icc/IccConstants">
+</interface>
+<interface name="org/apache/sanselan/SanselanConstants">
+</interface>
+</signatures>

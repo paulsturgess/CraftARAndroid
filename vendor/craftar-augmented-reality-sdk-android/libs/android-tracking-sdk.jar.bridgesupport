@@ -1,0 +1,627 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name="com/craftar/CLog" super="java/lang/Object">
+</class>
+<class name="com/craftar/ConfCamera$PictureSizes" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/ConfCamera;)V"/>
+</class>
+<class name="com/craftar/ConfCamera" super="java/lang/Object">
+</class>
+<class name="com/craftar/ConfCLog" super="java/lang/Object">
+</class>
+<class name="com/craftar/ConfCRSConnect" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/ContentRenderer" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="onAppResume" type="()V"/>
+<method name="onAppPause" type="()V"/>
+<method name="onActivityDestroyedForOrientationChange" type="()V"/>
+</class>
+<class name="com/craftar/CraftARActivity$OrientationListener" super="android/view/OrientationEventListener">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARActivity;Landroid/content/Context;)V"/>
+<method name="onOrientationChanged" type="(I)V"/>
+</class>
+<class name="com/craftar/CraftARBuild" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/CraftARCamera" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="setImageHandler" type="(Lcom/craftar/CraftARImageHandler;)V"/>
+<method name="takePicture" type="()Z"/>
+<method name="freezePreview" type="()V"/>
+<method name="restartCameraPreview" type="()V"/>
+<method name="setAutoFocusOnTouch" type="(Z)V"/>
+<method name="triggerFocus" type="()V"/>
+</class>
+<class name="com/craftar/CraftARCameraView" super="cc/openframeworks/OFGLCameraView">
+<method name="&lt;init&gt;" type="(Landroid/content/Context;)V"/>
+<method name="&lt;init&gt;" type="(Landroid/content/Context;Landroid/util/AttributeSet;)V"/>
+<method name="surfaceDestroyed" type="(Landroid/view/SurfaceHolder;)V"/>
+</class>
+<class name="com/craftar/CraftARCloudRecognition" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="setRequestBBoxes" type="(Z)V"/>
+<method name="setEmbedCustom" type="(Z)V"/>
+<method name="setCollectionToken" type="(Ljava/lang/String;)V"/>
+<method name="setSearchUrl" type="(Ljava/lang/String;)V"/>
+<method name="setConnectUrl" type="(Ljava/lang/String;)V"/>
+<method name="startFinding" type="()V"/>
+<method name="stopFinding" type="()V"/>
+<method name="connect" type="(Ljava/lang/String;)V"/>
+<method name="searchWithImage" type="(Ljava/lang/String;Lcom/craftar/CraftARImage;)V"/>
+<method name="searchWithImage" type="(Ljava/lang/String;Ljava/io/File;)V"/>
+<method name="searchWithImage" type="(Ljava/lang/String;Landroid/graphics/Bitmap;)V"/>
+<method name="setResponseHandler" type="(Lcom/craftar/CraftARResponseHandler;)V"/>
+<method name="setFinderFramerate" type="(F)Z"/>
+<method name="setItemsFactory" type="(Lcom/craftar/CraftARItemFactory;)V"/>
+<method name="setCRSConnect" type="(Lcom/craftar/CRSConnect;)V"/>
+</class>
+<class name="com/craftar/CraftARCloudRecognitionError$ErrorCodes" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/CraftARCloudRecognitionError$StringErrorCodes" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/CraftARCloudRecognitionError" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lorg/json/JSONObject;I)V"/>
+<method name="&lt;init&gt;" type="(Lorg/json/JSONObject;)V"/>
+<method name="getErrorCode" type="()I"/>
+<method name="getErrorMessage" type="()Ljava/lang/String;"/>
+<method name="getHttpResponseCode" type="()I"/>
+</class>
+<class name="com/craftar/CraftARImage" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="getByteArrayOutputStream" type="()Ljava/io/ByteArrayOutputStream;"/>
+<method name="toBitmap" type="()Landroid/graphics/Bitmap;"/>
+<method name="setByteArrayOutputStream" type="(Ljava/io/ByteArrayOutputStream;)V"/>
+<method name="setYUV420SPdata" type="([B)V"/>
+<method name="getYUV420SPdata" type="()[B"/>
+</class>
+<class name="com/craftar/CraftARItemAR" super="com/craftar/CraftARItem">
+</class>
+<class name="com/craftar/CraftARItemFactory" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="itemFromJSONObject" type="(Lorg/json/JSONObject;)Lcom/craftar/CraftARItem;"/>
+</class>
+<class name="com/craftar/CraftARResponseHandler$RequestCodes" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/CraftARSDK" super="java/lang/Object">
+</class>
+<class name="com/craftar/CraftARSDKException" super="java/lang/Exception">
+<method name="&lt;init&gt;" type="(ILjava/lang/String;)V"/>
+<method name="getExceptionId" type="()I"/>
+</class>
+<class name="com/craftar/CraftARTouchEventInterface" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTracking" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="startTracking" type="()Z"/>
+<method name="stopTracking" type="()Z"/>
+<method name="addItem" type="(Lcom/craftar/CraftARItemAR;)V"/>
+<method name="removeItem" type="(Lcom/craftar/CraftARItemAR;)V"/>
+<method name="removeAllItems" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$ContentStatus" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$ContentTouchEvent" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$ContentType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$ContentTypeName" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$ContentWrapMode" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$LoadContentInBackground" super="android/os/AsyncTask">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="doInBackground" type="([Lcom/craftar/CraftARTrackingContent;)Ljava/lang/Boolean;"/>
+<method name="onPostExecute" type="(Ljava/lang/Boolean;)V"/>
+<method name="onPostExecute" type="(Ljava/lang/Object;)V"/>
+<method name="doInBackground" type="([Ljava/lang/Object;)Ljava/lang/Object;"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="&lt;init&gt;" type="(Lorg/json/JSONObject;)V"/>
+<method name="contentTypeFromJSON" type="(Lorg/json/JSONObject;)I" class_method="true"/>
+<method name="getContentType" type="()I"/>
+<method name="setTranslation" type="([F)V"/>
+<method name="getTranslation" type="()[F"/>
+<method name="setRotationMatrix" type="([F)V"/>
+<method name="getRotationMatrix" type="()[F"/>
+<method name="setScale" type="([F)V"/>
+<method name="getScale" type="()[F"/>
+<method name="setWrapMode" type="(I)V"/>
+<method name="getWrapMode" type="()I"/>
+<method name="setAlpha" type="(F)V"/>
+<method name="getAlpha" type="()F"/>
+<method name="getUUID" type="()Ljava/lang/String;"/>
+<method name="updateContentAttributes" type="()V"/>
+<method name="setDrawsOffTracking" type="(Z)V"/>
+<method name="load" type="(FFI)V"/>
+<method name="loadContentNative" type="(FFI)V"/>
+<method name="contentLoadFinalized" type="(Z)V"/>
+<method name="clearContentResources" type="()V"/>
+<method name="getStatus" type="()I"/>
+<method name="finalize" type="()V"/>
+<method name="cancelContentLoad" type="()V"/>
+<method name="drawWithItemPose" type="([F[FI)V"/>
+<method name="update" type="()V"/>
+<method name="trackingStarted" type="()V"/>
+<method name="trackingLost" type="()V"/>
+<method name="setContentClickListener" type="(Lcom/craftar/CraftARTouchEventInterface$OnContentClickListener;)V"/>
+<method name="setContentTouchEventListener" type="(Lcom/craftar/CraftARTouchEventInterface$OnTouchEventListener;)V"/>
+<method name="setTouchEvent" type="(I)V"/>
+<method name="setContentVersion" type="(I)V"/>
+<method name="onAppResume" type="()V"/>
+<method name="onAppPause" type="()V"/>
+<method name="onDestroyedForOrientationChange" type="()V"/>
+<method name="onAppResumeNative" type="()V"/>
+<method name="access$0" type="(Lcom/craftar/CraftARTrackingContent;)F" class_method="true"/>
+<method name="access$1" type="(Lcom/craftar/CraftARTrackingContent;)F" class_method="true"/>
+<method name="access$2" type="(Lcom/craftar/CraftARTrackingContent;Lcom/craftar/CraftARTrackingContent$LoadContentInBackground;)V" class_method="true"/>
+<method name="access$3" type="(Lcom/craftar/CraftARTrackingContent;)Lcom/craftar/CraftARTrackingContent$LoadContentInBackground;" class_method="true"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$Pair3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$ResourceType" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContentFactory" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="contentFromJSONObject" type="(Lorg/json/JSONObject;)Lcom/craftar/CraftARTrackingContent;"/>
+</class>
+<class name="com/craftar/CraftARTrackingContentImage" super="com/craftar/CraftARTrackingContent">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Lorg/json/JSONObject;)V"/>
+<method name="drawWithItemPose" type="([F[FI)V"/>
+<method name="update" type="()V"/>
+<method name="finalize" type="()V"/>
+<method name="trackingStarted" type="()V"/>
+<method name="trackingLost" type="()V"/>
+<method name="setTouchEvent" type="(I)V"/>
+<method name="contentLoadFinalized" type="(Z)V"/>
+<method name="updateContentAttributes" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContentImageButton" super="com/craftar/CraftARTrackingContent">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Lorg/json/JSONObject;)V"/>
+<method name="drawWithItemPose" type="([F[FI)V"/>
+<method name="finalize" type="()V"/>
+<method name="trackingStarted" type="()V"/>
+<method name="setTouchEvent" type="(I)V"/>
+<method name="trackingLost" type="()V"/>
+<method name="contentLoadFinalized" type="(Z)V"/>
+<method name="updateContentAttributes" type="()V"/>
+<method name="update" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContentVideo" super="com/craftar/CraftARTrackingContent">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Z)V"/>
+<method name="&lt;init&gt;" type="(Lorg/json/JSONObject;)V"/>
+<method name="finalize" type="()V"/>
+<method name="clearContentResources" type="()V"/>
+<method name="drawWithItemPose" type="([F[FI)V"/>
+<method name="onVideoLoaded" type="(II)V"/>
+<method name="contentLoadFinalized" type="(Z)V"/>
+<method name="cancelContentLoad" type="()V"/>
+<method name="updateContentAttributes" type="()V"/>
+<method name="update" type="()V"/>
+<method name="onAppResume" type="()V"/>
+<method name="onAppPause" type="()V"/>
+<method name="trackingStarted" type="()V"/>
+<method name="trackingLost" type="()V"/>
+<method name="playbackFinished" type="()V"/>
+<method name="setTouchEvent" type="(I)V"/>
+<method name="play" type="()V"/>
+<method name="pause" type="()V"/>
+<method name="stop" type="()V"/>
+<method name="setMuted" type="(Z)V"/>
+<method name="seekTo" type="(F)V"/>
+<method name="seekTo" type="(I)V"/>
+<method name="getPositionMS" type="()I"/>
+<method name="toogleFullScreen" type="()V"/>
+<method name="access$0" type="(Lcom/craftar/CraftARTrackingContentVideo;)Lcom/craftar/VideoPlayer;" class_method="true"/>
+</class>
+<class name="com/craftar/CRSConnect$Request" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="com/craftar/CRSConnect" super="java/lang/Object">
+</class>
+<class name="com/craftar/ImplCraftARTracking" super="com/craftar/CraftARTracking">
+</class>
+<class name="com/craftar/TrackingResult" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="&lt;init&gt;" type="(I[B)V"/>
+</class>
+<class name="com/craftar/UtilsByte" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="streamToBytes" type="(Ljava/io/InputStream;)[B" class_method="true"/>
+<method name="checkSum" type="(Ljava/lang/String;)Ljava/lang/String;" class_method="true"/>
+<method name="toInt" type="([BZ)I" class_method="true"/>
+<method name="LE2INT" type="([B)I" class_method="true"/>
+</class>
+<class name="com/craftar/UtilsImage$Config" super="java/lang/Object">
+</class>
+<class name="com/craftar/UtilsImage" super="java/lang/Object">
+</class>
+<class name="com/craftar/UtilsTrackingContent" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="wrapModeFromJSON" type="(Lorg/json/JSONObject;)I" class_method="true"/>
+<method name="scaleFromJSON" type="(Lorg/json/JSONObject;)[F" class_method="true"/>
+<method name="rotationMatrixFromJSON" type="(Lorg/json/JSONObject;)[F" class_method="true"/>
+<method name="rotationEulerFromJSON" type="(Lorg/json/JSONObject;)[F" class_method="true"/>
+<method name="rotationMatrixFromRotationEuler" type="([F)[F" class_method="true"/>
+<method name="translationFromJSON" type="(Lorg/json/JSONObject;)[F" class_method="true"/>
+</class>
+<class name="org/apache/http/entity/mime/content/ByteArrayBody" super="org/apache/http/entity/mime/content/AbstractContentBody">
+<method name="&lt;init&gt;" type="([BLjava/lang/String;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="([BLjava/lang/String;)V"/>
+<method name="getFilename" type="()Ljava/lang/String;"/>
+<method name="writeTo" type="(Ljava/io/OutputStream;)V"/>
+<method name="getCharset" type="()Ljava/lang/String;"/>
+<method name="getTransferEncoding" type="()Ljava/lang/String;"/>
+<method name="getContentLength" type="()J"/>
+</class>
+<class name="org/apache/http/entity/mime/content/FileBody" super="org/apache/http/entity/mime/content/AbstractContentBody">
+<method name="&lt;init&gt;" type="(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/File;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/File;)V"/>
+<method name="getInputStream" type="()Ljava/io/InputStream;"/>
+<method name="writeTo" type="(Ljava/io/OutputStream;)V"/>
+<method name="getTransferEncoding" type="()Ljava/lang/String;"/>
+<method name="getCharset" type="()Ljava/lang/String;"/>
+<method name="getContentLength" type="()J"/>
+<method name="getFilename" type="()Ljava/lang/String;"/>
+<method name="getFile" type="()Ljava/io/File;"/>
+</class>
+<class name="org/apache/http/entity/mime/content/InputStreamBody" super="org/apache/http/entity/mime/content/AbstractContentBody">
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/io/InputStream;Ljava/lang/String;)V"/>
+<method name="getInputStream" type="()Ljava/io/InputStream;"/>
+<method name="writeTo" type="(Ljava/io/OutputStream;)V"/>
+<method name="getTransferEncoding" type="()Ljava/lang/String;"/>
+<method name="getCharset" type="()Ljava/lang/String;"/>
+<method name="getContentLength" type="()J"/>
+<method name="getFilename" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/http/entity/mime/content/StringBody" super="org/apache/http/entity/mime/content/AbstractContentBody">
+<method name="create" type="(Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)Lorg/apache/http/entity/mime/content/StringBody;" class_method="true"/>
+<method name="create" type="(Ljava/lang/String;Ljava/nio/charset/Charset;)Lorg/apache/http/entity/mime/content/StringBody;" class_method="true"/>
+<method name="create" type="(Ljava/lang/String;)Lorg/apache/http/entity/mime/content/StringBody;" class_method="true"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/nio/charset/Charset;)V"/>
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="getReader" type="()Ljava/io/Reader;"/>
+<method name="writeTo" type="(Ljava/io/OutputStream;)V"/>
+<method name="getTransferEncoding" type="()Ljava/lang/String;"/>
+<method name="getCharset" type="()Ljava/lang/String;"/>
+<method name="getContentLength" type="()J"/>
+<method name="getFilename" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/http/entity/mime/FormBodyPart" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Lorg/apache/http/entity/mime/content/ContentBody;)V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getBody" type="()Lorg/apache/http/entity/mime/content/ContentBody;"/>
+<method name="getHeader" type="()Lorg/apache/http/entity/mime/Header;"/>
+<method name="addField" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="generateContentDisp" type="(Lorg/apache/http/entity/mime/content/ContentBody;)V"/>
+<method name="generateContentType" type="(Lorg/apache/http/entity/mime/content/ContentBody;)V"/>
+<method name="generateTransferEncoding" type="(Lorg/apache/http/entity/mime/content/ContentBody;)V"/>
+</class>
+<class name="org/apache/http/entity/mime/HttpMultipart" super="java/lang/Object">
+</class>
+<class name="org/apache/http/entity/mime/HttpMultipartMode" super="java/lang/Enum">
+</class>
+<class name="org/apache/http/entity/mime/MIME" super="java/lang/Object">
+</class>
+<class name="org/apache/http/entity/mime/MinimalField" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="getName" type="()Ljava/lang/String;"/>
+<method name="getBody" type="()Ljava/lang/String;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="util/Base64" super="java/lang/Object">
+</class>
+<class name="util/CSparseArray" super="android/util/SparseArray">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="cloneArray" type="()Lutil/CSparseArray;"/>
+</class>
+<class name="com/craftar/CraftARActivity$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARActivity;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="com/craftar/CraftARActivity$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARActivity;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="com/craftar/CraftARActivity$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARActivity;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="com/craftar/CraftARActivity" super="android/app/Activity">
+</class>
+<class name="com/craftar/CraftARFullScreenVideoActivity" super="android/app/Activity">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="onCreate" type="(Landroid/os/Bundle;)V"/>
+<method name="onPause" type="()V"/>
+<method name="onResume" type="()V"/>
+<method name="onBackPressed" type="()V"/>
+<method name="finish" type="()V"/>
+<method name="onPrepared" type="(Landroid/media/MediaPlayer;)V"/>
+<method name="surfaceCreated" type="(Landroid/view/SurfaceHolder;)V"/>
+<method name="surfaceChanged" type="(Landroid/view/SurfaceHolder;III)V"/>
+<method name="surfaceDestroyed" type="(Landroid/view/SurfaceHolder;)V"/>
+</class>
+<class name="com/craftar/CraftARItem$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="createFromParcel" type="(Landroid/os/Parcel;)Lcom/craftar/CraftARItem;"/>
+<method name="newArray" type="(I)[Lcom/craftar/CraftARItem;"/>
+<method name="createFromParcel" type="(Landroid/os/Parcel;)Ljava/lang/Object;"/>
+<method name="newArray" type="(I)[Ljava/lang/Object;"/>
+</class>
+<class name="com/craftar/CraftARItem" super="java/lang/Object">
+</class>
+<class name="com/craftar/CraftARSDK$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchUp" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchOut" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchIn" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchDown" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onClick" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent$4" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent;Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;Lcom/craftar/ResourceDownloader;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;Landroid/util/Pair;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$4" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;I)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$5" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;ILjava/net/URL;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel$6" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContent3dmodel;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContent3dmodel" super="com/craftar/CraftARTrackingContent">
+</class>
+<class name="com/craftar/CraftARTrackingContentImageButton$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContentImageButton;)V"/>
+<method name="onClick" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</class>
+<class name="com/craftar/CraftARTrackingContentVideo$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContentVideo;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CRSConnect$ConnectRunnable" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CRSConnect;Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/CRSConnect$SearchRunnable" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CRSConnect;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;J)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/ImplCraftARCameraOF$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/ImplCraftARCameraOF;)V"/>
+<method name="updateCameraParams" type="(Landroid/hardware/Camera$Parameters;)V"/>
+</class>
+<class name="com/craftar/ImplCraftARCameraOF" super="com/craftar/CraftARCamera">
+<method name="&lt;init&gt;" type="(Landroid/content/Context;)V"/>
+<method name="setVideoGrabber" type="(Ljava/lang/Object;)V"/>
+<method name="setImageHandler" type="(Lcom/craftar/CraftARImageHandler;)V"/>
+<method name="takePicture" type="()Z"/>
+<method name="freezePreview" type="()V"/>
+<method name="restartCameraPreview" type="()V"/>
+<method name="onPictureTaken" type="([BIII)V"/>
+<method name="setAutoFocusOnTouch" type="(Z)V"/>
+<method name="triggerFocus" type="()V"/>
+<method name="getDefaultVideoFrameRotation" type="()I"/>
+<method name="access$0" type="(Lcom/craftar/ImplCraftARCameraOF;)Landroid/content/Context;" class_method="true"/>
+</class>
+<class name="com/craftar/ImplCraftARCloudRecognition$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/ImplCraftARCloudRecognition;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/ImplCraftARCloudRecognition$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/ImplCraftARCloudRecognition;Ljava/util/ArrayList;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/ImplCraftARCloudRecognition$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/ImplCraftARCloudRecognition;ILcom/craftar/CraftARCloudRecognitionError;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/ImplCraftARCloudRecognition" super="com/craftar/CraftARCloudRecognition">
+<method name="&lt;init&gt;" type="(Landroid/os/Handler;Z)V"/>
+<method name="setCRSConnect" type="(Lcom/craftar/CRSConnect;)V"/>
+<method name="setRequestBBoxes" type="(Z)V"/>
+<method name="setEmbedCustom" type="(Z)V"/>
+<method name="setCollectionToken" type="(Ljava/lang/String;)V"/>
+<method name="setSearchUrl" type="(Ljava/lang/String;)V"/>
+<method name="setConnectUrl" type="(Ljava/lang/String;)V"/>
+<method name="setItemsFactory" type="(Lcom/craftar/CraftARItemFactory;)V"/>
+<method name="startFinding" type="()V"/>
+<method name="stopFinding" type="()V"/>
+<method name="searchWithImage" type="(Ljava/lang/String;Lcom/craftar/CraftARImage;)V"/>
+<method name="searchWithImage" type="(Ljava/lang/String;Ljava/io/File;)V"/>
+<method name="searchWithImage" type="(Ljava/lang/String;Landroid/graphics/Bitmap;)V"/>
+<method name="connect" type="(Ljava/lang/String;)V"/>
+<method name="setResponseHandler" type="(Lcom/craftar/CraftARResponseHandler;)V"/>
+<method name="setFinderFramerate" type="(F)Z"/>
+<method name="incrementFrameCounter" type="()V"/>
+<method name="receiveNewFrame" type="(IIF)V"/>
+<method name="requestCompletedResponse" type="(IILorg/json/JSONObject;)V"/>
+<method name="requestFailedResponse" type="(ILjava/lang/Exception;)V"/>
+<method name="onAppPause" type="()V"/>
+<method name="onAppResume" type="()V"/>
+<method name="access$0" type="(Lcom/craftar/ImplCraftARCloudRecognition;)Lcom/craftar/CraftARResponseHandler;" class_method="true"/>
+</class>
+<class name="com/craftar/ImplCraftARTracking$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/ImplCraftARTracking;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="com/craftar/ResourceDownloader" super="android/os/HandlerThread">
+<method name="&lt;init&gt;" type="(IILjava/net/URL;Ljava/lang/String;Lcom/craftar/ResourceDownloader$DownloadProgressHandler;)V"/>
+<method name="computeSize" type="()V"/>
+<method name="startDownloading" type="()V"/>
+</class>
+<class name="com/craftar/VideoPlayer$MovieLoader$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/VideoPlayer$MovieLoader;)V"/>
+<method name="onPrepared" type="(Landroid/media/MediaPlayer;)V"/>
+</class>
+<class name="com/craftar/VideoPlayer$MovieLoader$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/VideoPlayer$MovieLoader;)V"/>
+<method name="onCompletion" type="(Landroid/media/MediaPlayer;)V"/>
+</class>
+<class name="com/craftar/VideoPlayer$MovieLoader" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/VideoPlayer;Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+<method name="access$0" type="(Lcom/craftar/VideoPlayer$MovieLoader;)Lcom/craftar/VideoPlayer;" class_method="true"/>
+</class>
+<class name="com/craftar/VideoPlayer" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcom/craftar/CraftARTrackingContentVideo;)V"/>
+<method name="onFrameAvailable" type="(Landroid/graphics/SurfaceTexture;)V"/>
+<method name="setTexture" type="(I)V"/>
+<method name="clearTextures" type="()V"/>
+<method name="update" type="()Z"/>
+<method name="getTextureMatrix" type="([F)V"/>
+<method name="loadMovie" type="(Ljava/lang/String;)V"/>
+<method name="playVideo" type="()V"/>
+<method name="stopVideo" type="()V"/>
+<method name="unloadVideo" type="()V"/>
+<method name="setVolume" type="(F)V"/>
+<method name="getVolume" type="()F"/>
+<method name="pauseVideo" type="(Z)V"/>
+<method name="setLoopState" type="(Z)V"/>
+<method name="getLoopState" type="()Z"/>
+<method name="getWidth" type="()I"/>
+<method name="getHeight" type="()I"/>
+<method name="isLoaded" type="()Z"/>
+<method name="hasValidFrame" type="()Z"/>
+<method name="isPlaying" type="()Z"/>
+<method name="isMovieDone" type="()Z"/>
+<method name="setPosition" type="(F)V"/>
+<method name="setPositionMS" type="(I)V"/>
+<method name="getPosition" type="()F"/>
+<method name="getPositionMS" type="()I"/>
+<method name="getDuration" type="()F"/>
+<method name="getDurationMS" type="()I"/>
+<method name="cancelContentLoad" type="()V"/>
+<method name="appPause" type="()V"/>
+<method name="appResume" type="()V"/>
+<method name="appStop" type="()V"/>
+<method name="access$0" type="(Lcom/craftar/VideoPlayer;Z)V" class_method="true"/>
+<method name="access$1" type="(Lcom/craftar/VideoPlayer;)Landroid/media/MediaPlayer;" class_method="true"/>
+<method name="access$2" type="(Lcom/craftar/VideoPlayer;Landroid/media/MediaPlayer;)V" class_method="true"/>
+<method name="access$3" type="(Lcom/craftar/VideoPlayer;)Landroid/view/Surface;" class_method="true"/>
+<method name="access$4" type="(Lcom/craftar/VideoPlayer;Z)V" class_method="true"/>
+<method name="access$5" type="(Lcom/craftar/VideoPlayer;)Lcom/craftar/CraftARTrackingContentVideo;" class_method="true"/>
+<method name="access$6" type="(Lcom/craftar/VideoPlayer;)Z" class_method="true"/>
+<method name="access$7" type="(Lcom/craftar/VideoPlayer;)Z" class_method="true"/>
+<method name="access$8" type="(Lcom/craftar/VideoPlayer;Z)V" class_method="true"/>
+<method name="access$9" type="(Lcom/craftar/VideoPlayer;)Z" class_method="true"/>
+<method name="access$10" type="(Lcom/craftar/VideoPlayer;)I" class_method="true"/>
+<method name="access$11" type="(Lcom/craftar/VideoPlayer;Z)V" class_method="true"/>
+<method name="access$12" type="(Lcom/craftar/VideoPlayer;Z)V" class_method="true"/>
+</class>
+<class name="org/apache/http/entity/mime/content/AbstractContentBody" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="getMimeType" type="()Ljava/lang/String;"/>
+<method name="getMediaType" type="()Ljava/lang/String;"/>
+<method name="getSubType" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/http/entity/mime/Header" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="addField" type="(Lorg/apache/http/entity/mime/MinimalField;)V"/>
+<method name="getFields" type="()Ljava/util/List;"/>
+<method name="getField" type="(Ljava/lang/String;)Lorg/apache/http/entity/mime/MinimalField;"/>
+<method name="getFields" type="(Ljava/lang/String;)Ljava/util/List;"/>
+<method name="removeFields" type="(Ljava/lang/String;)I"/>
+<method name="setField" type="(Lorg/apache/http/entity/mime/MinimalField;)V"/>
+<method name="iterator" type="()Ljava/util/Iterator;"/>
+<method name="toString" type="()Ljava/lang/String;"/>
+</class>
+<class name="org/apache/http/entity/mime/MultipartEntity" super="java/lang/Object">
+</class>
+<interface name="com/craftar/CraftARContentDownloadProgressHandler">
+<method name="onDownloadProgress" type="(Lcom/craftar/CraftARTrackingContent3dmodel;D)V"/>
+<method name="onDownloadFinished" type="(Lcom/craftar/CraftARTrackingContent3dmodel;)V"/>
+<method name="onContentLoaded" type="(Lcom/craftar/CraftARTrackingContent3dmodel;)V"/>
+<method name="onContentLoadFailed" type="(Lcom/craftar/CraftARTrackingContent3dmodel;)V"/>
+</interface>
+<interface name="com/craftar/CraftARImageHandler">
+<method name="requestImageReceived" type="(Lcom/craftar/CraftARImage;)V"/>
+<method name="requestImageError" type="(Ljava/lang/String;)V"/>
+</interface>
+<interface name="com/craftar/CraftARResponseHandler">
+<method name="searchCompleted" type="(Ljava/util/ArrayList;)V"/>
+<method name="connectCompleted" type="()V"/>
+<method name="requestFailedResponse" type="(ILcom/craftar/CraftARCloudRecognitionError;)V"/>
+</interface>
+<interface name="com/craftar/CraftARTouchEventInterface$OnContentClickListener">
+<method name="onClick" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</interface>
+<interface name="com/craftar/CraftARTouchEventInterface$OnTouchEventListener">
+<method name="onTouchIn" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchOut" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchDown" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+<method name="onTouchUp" type="(Lcom/craftar/CraftARTrackingContent;)V"/>
+</interface>
+<interface name="com/craftar/CRSConnectHandler">
+<method name="requestCompletedResponse" type="(IILorg/json/JSONObject;)V"/>
+<method name="requestFailedResponse" type="(ILjava/lang/Exception;)V"/>
+</interface>
+<interface name="com/craftar/OnNewFrameReceived">
+<method name="receiveNewFrame" type="([B[IIIF)V"/>
+<method name="onPreviewInitialized" type="(IIII)V"/>
+</interface>
+<interface name="com/craftar/OnTrackingExpired">
+<method name="onTrackingFreeTrialExpired" type="()V"/>
+</interface>
+<interface name="com/craftar/ResourceDownloader$DownloadProgressHandler">
+<method name="onFileSizeDetermined" type="(IJ)V"/>
+<method name="onDownloadProgress" type="(II)V"/>
+<method name="onDownloadFinished" type="(IILjava/net/URL;Z)V"/>
+</interface>
+<interface name="org/apache/http/entity/mime/content/ContentDescriptor">
+<method name="getMimeType" type="()Ljava/lang/String;"/>
+<method name="getMediaType" type="()Ljava/lang/String;"/>
+<method name="getSubType" type="()Ljava/lang/String;"/>
+<method name="getCharset" type="()Ljava/lang/String;"/>
+<method name="getTransferEncoding" type="()Ljava/lang/String;"/>
+<method name="getContentLength" type="()J"/>
+</interface>
+</signatures>

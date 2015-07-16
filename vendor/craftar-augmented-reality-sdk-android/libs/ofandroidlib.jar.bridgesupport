@@ -1,0 +1,359 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name="cc/openframeworks/OFAndroid$6" super="android/content/BroadcastReceiver">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="onReceive" type="(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid" super="java/lang/Object">
+</class>
+<class name="cc/openframeworks/OFAndroidAccelerometer" super="cc/openframeworks/OFAndroidObject">
+<method name="&lt;init&gt;" type="(Landroid/hardware/SensorManager;)V"/>
+<method name="appPause" type="()V"/>
+<method name="appResume" type="()V"/>
+<method name="appStop" type="()V"/>
+<method name="updateAccelerometer" type="(FFF)V" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$OrientationListener" super="android/view/OrientationEventListener">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;Landroid/content/Context;)V"/>
+<method name="onOrientationChanged" type="(I)V"/>
+<method name="access$0" type="(Lcc/openframeworks/OFAndroidCameraThread$OrientationListener;)I" class_method="true"/>
+<method name="access$1" type="(Lcc/openframeworks/OFAndroidCameraThread$OrientationListener;)Lcc/openframeworks/OFAndroidCameraThread;" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroidObject$State" super="java/lang/Enum">
+</class>
+<class name="cc/openframeworks/OFAndroidObject" super="java/lang/Object">
+</class>
+<class name="cc/openframeworks/OFAndroidSoundPlayer" super="cc/openframeworks/OFAndroidObject">
+</class>
+<class name="cc/openframeworks/OFAndroidSoundStream$HeadphonesReceiver" super="android/content/BroadcastReceiver">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidSoundStream;)V"/>
+<method name="onReceive" type="(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</class>
+<class name="cc/openframeworks/OFGLCameraView" super="cc/openframeworks/OFGLSurfaceView">
+<method name="&lt;init&gt;" type="(Landroid/content/Context;)V"/>
+<method name="&lt;init&gt;" type="(Landroid/content/Context;Landroid/util/AttributeSet;)V"/>
+<method name="surfaceDestroyed" type="(Landroid/view/SurfaceHolder;)V"/>
+</class>
+<class name="cc/openframeworks/OFGLSurfaceView" super="android/opengl/GLSurfaceView">
+<method name="&lt;init&gt;" type="(Landroid/content/Context;)V"/>
+<method name="&lt;init&gt;" type="(Landroid/content/Context;Landroid/util/AttributeSet;)V"/>
+<method name="surfaceDestroyed" type="(Landroid/view/SurfaceHolder;)V"/>
+<method name="isSetup" type="()Z"/>
+</class>
+<class name="cc/openframeworks/OFZipUtil" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="extractFile" type="(Ljava/util/zip/ZipInputStream;Ljava/io/File;Ljava/lang/String;)V" class_method="true"/>
+<method name="mkdirs" type="(Ljava/io/File;Ljava/lang/String;)V" class_method="true"/>
+<method name="dirpart" type="(Ljava/lang/String;)Ljava/lang/String;" class_method="true"/>
+<method name="extract" type="(Ljava/io/InputStream;Ljava/io/File;)V" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$10$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$10;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$10$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$10;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$10" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;II)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$11$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$11;Landroid/widget/EditText;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$11$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$11;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$11" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$12$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$12;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$12" super="java/lang/Object">
+<method name="&lt;init&gt;" type="([Ljava/lang/String;Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$13" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$14" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$15" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$16" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(I)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$3$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$3;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid;Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$4" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$5" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;Z)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$7" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;I)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$8" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Landroid/app/ProgressDialog;I)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$9$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroid$9;)V"/>
+<method name="onClick" type="(Landroid/content/DialogInterface;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroid$9" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Ljava/lang/String;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidAccelerometer$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidAccelerometer;)V"/>
+<method name="onSensorChanged" type="(Landroid/hardware/SensorEvent;)V"/>
+<method name="onAccuracyChanged" type="(Landroid/hardware/Sensor;I)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;III)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$10" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$11" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;Lcc/openframeworks/OFAndroidCameraThread$CameraPictureCallback;)V"/>
+<method name="onPictureTaken" type="([BLandroid/hardware/Camera;)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$12" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;ZI)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$4" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;I)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$5" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;Lcc/openframeworks/OFAndroidCameraThread$CameraPictureCallback;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$6" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;ZI)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$7" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$8" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;Lcc/openframeworks/OFAndroidCameraThread$CameraParamsTask;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$9" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;Landroid/app/Activity;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$AutoFocusCB" super="java/lang/Object">
+<method name="onAutoFocus" type="(ZLandroid/hardware/Camera;)V"/>
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;Lcc/openframeworks/OFAndroidCameraThread$AutoFocusCB;)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$AutoFocusPeriodicTask" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread;I)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread$OrientationListener$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread$OrientationListener;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidCameraThread" super="android/os/HandlerThread">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidCameraThread$CameraEventHandler;)V"/>
+<method name="start" type="()V"/>
+<method name="startCapturing" type="(III)V"/>
+<method name="stopCapturing" type="()V"/>
+<method name="restartCapture" type="()V"/>
+<method name="setTexture" type="(I)V"/>
+<method name="takePicture" type="(Lcc/openframeworks/OFAndroidCameraThread$CameraPictureCallback;)V"/>
+<method name="setAutoFocus" type="(ZI)V"/>
+<method name="triggerFocus" type="()V"/>
+<method name="updateCameraParams" type="(Lcc/openframeworks/OFAndroidCameraThread$CameraParamsTask;)V"/>
+<method name="onPreviewFrame" type="([BLandroid/hardware/Camera;)V"/>
+<method name="takePictureInternal" type="(Lcc/openframeworks/OFAndroidCameraThread$CameraPictureCallback;)V"/>
+<method name="triggerFocusInternal" type="()V"/>
+<method name="access$0" type="(Lcc/openframeworks/OFAndroidCameraThread;)Landroid/hardware/Camera;" class_method="true"/>
+<method name="access$1" type="(Lcc/openframeworks/OFAndroidCameraThread;)Z" class_method="true"/>
+<method name="access$2" type="(Lcc/openframeworks/OFAndroidCameraThread;)Lcc/openframeworks/OFAndroidCameraThread$AutoFocusCB;" class_method="true"/>
+<method name="access$3" type="(Lcc/openframeworks/OFAndroidCameraThread;III)V" class_method="true"/>
+<method name="access$4" type="(Lcc/openframeworks/OFAndroidCameraThread;)V" class_method="true"/>
+<method name="access$5" type="(Lcc/openframeworks/OFAndroidCameraThread;Z)V" class_method="true"/>
+<method name="access$6" type="(Lcc/openframeworks/OFAndroidCameraThread;)I" class_method="true"/>
+<method name="access$7" type="(Lcc/openframeworks/OFAndroidCameraThread;)I" class_method="true"/>
+<method name="access$8" type="(Lcc/openframeworks/OFAndroidCameraThread;)I" class_method="true"/>
+<method name="access$9" type="(Lcc/openframeworks/OFAndroidCameraThread;I)V" class_method="true"/>
+<method name="access$10" type="(Lcc/openframeworks/OFAndroidCameraThread;ZI)V" class_method="true"/>
+<method name="access$11" type="(Lcc/openframeworks/OFAndroidCameraThread;Lcc/openframeworks/OFAndroidCameraThread$CameraParamsTask;)V" class_method="true"/>
+<method name="access$12" type="(Lcc/openframeworks/OFAndroidCameraThread;)Lcc/openframeworks/OFAndroidCameraThread$CameraParamsTask;" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroidGPS$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidGPS;Lcc/openframeworks/OFAndroidGPS;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidGPS$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidGPS;Lcc/openframeworks/OFAndroidGPS;)V"/>
+<method name="run" type="()V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidGPS" super="cc/openframeworks/OFAndroidObject">
+<method name="&lt;init&gt;" type="(Landroid/app/Activity;)V"/>
+<method name="startGPS" type="()V"/>
+<method name="stopGPS" type="()V"/>
+<method name="onLocationChanged" type="(Landroid/location/Location;)V"/>
+<method name="onProviderEnabled" type="(Ljava/lang/String;)V"/>
+<method name="onProviderDisabled" type="(Ljava/lang/String;)V"/>
+<method name="onStatusChanged" type="(Ljava/lang/String;ILandroid/os/Bundle;)V"/>
+<method name="locationChanged" type="(DDDFF)V" class_method="true"/>
+<method name="appPause" type="()V"/>
+<method name="appResume" type="()V"/>
+<method name="appStop" type="()V"/>
+<method name="access$0" type="(Lcc/openframeworks/OFAndroidGPS;)Landroid/app/Activity;" class_method="true"/>
+<method name="access$1" type="(Lcc/openframeworks/OFAndroidGPS;Z)V" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroidSoundStream" super="cc/openframeworks/OFAndroidObject">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="isInitialized" type="()Z" class_method="true"/>
+<method name="getInstance" type="()Lcc/openframeworks/OFAndroidSoundStream;" class_method="true"/>
+<method name="getMinOutBufferSize" type="(II)I" class_method="true"/>
+<method name="getMinInBufferSize" type="(II)I" class_method="true"/>
+<method name="setup" type="(IIIII)V"/>
+<method name="appStop" type="()V"/>
+<method name="appPause" type="()V"/>
+<method name="appResume" type="()V"/>
+<method name="start" type="()V"/>
+<method name="onMarkerReached" type="(Landroid/media/AudioRecord;)V"/>
+<method name="onPeriodicNotification" type="(Landroid/media/AudioRecord;)V"/>
+<method name="onMarkerReached" type="(Landroid/media/AudioTrack;)V"/>
+<method name="onPeriodicNotification" type="(Landroid/media/AudioTrack;)V"/>
+<method name="run" type="()V"/>
+<method name="audioOut" type="([SII)I" class_method="true"/>
+<method name="audioIn" type="([SII)I" class_method="true"/>
+<method name="headphonesConnected" type="(Z)V" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroidVideoGrabber" super="cc/openframeworks/OFAndroidObject">
+</class>
+<class name="cc/openframeworks/OFAndroidVideoPlayer$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidVideoPlayer;)V"/>
+<method name="onPrepared" type="(Landroid/media/MediaPlayer;)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidVideoPlayer$2" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidVideoPlayer;)V"/>
+<method name="onVideoSizeChanged" type="(Landroid/media/MediaPlayer;II)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidVideoPlayer$3" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFAndroidVideoPlayer;)V"/>
+<method name="onCompletion" type="(Landroid/media/MediaPlayer;)V"/>
+</class>
+<class name="cc/openframeworks/OFAndroidVideoPlayer" super="cc/openframeworks/OFAndroidObject">
+<method name="&lt;init&gt;" type="()V"/>
+<method name="setTexture" type="(I)V"/>
+<method name="clearTextures" type="()V"/>
+<method name="update" type="()Z"/>
+<method name="getTextureMatrix" type="([F)V"/>
+<method name="loadMovie" type="(Ljava/lang/String;)V"/>
+<method name="play" type="()V"/>
+<method name="stop" type="()V"/>
+<method name="unloadMovie" type="()V"/>
+<method name="setVolume" type="(F)V"/>
+<method name="getVolume" type="()F"/>
+<method name="setPaused" type="(Z)V"/>
+<method name="setLoopState" type="(Z)V"/>
+<method name="getLoopState" type="()Z"/>
+<method name="getWidth" type="()I"/>
+<method name="getHeight" type="()I"/>
+<method name="isLoaded" type="()Z"/>
+<method name="isPaused" type="()Z"/>
+<method name="isPlaying" type="()Z"/>
+<method name="isMovieDone" type="()Z"/>
+<method name="setPosition" type="(F)V"/>
+<method name="setPositionMS" type="(I)V"/>
+<method name="getPosition" type="()F"/>
+<method name="getPositionMS" type="()I"/>
+<method name="getDuration" type="()F"/>
+<method name="getDurationMS" type="()I"/>
+<method name="appPause" type="()V"/>
+<method name="appResume" type="()V"/>
+<method name="appStop" type="()V"/>
+<method name="onFrameAvailable" type="(Landroid/graphics/SurfaceTexture;)V"/>
+<method name="access$0" type="(Lcc/openframeworks/OFAndroidVideoPlayer;Z)V" class_method="true"/>
+<method name="access$1" type="(Lcc/openframeworks/OFAndroidVideoPlayer;)Z" class_method="true"/>
+<method name="access$2" type="(Lcc/openframeworks/OFAndroidVideoPlayer;Z)V" class_method="true"/>
+<method name="access$3" type="(Lcc/openframeworks/OFAndroidVideoPlayer;)Z" class_method="true"/>
+<method name="access$4" type="(Lcc/openframeworks/OFAndroidVideoPlayer;)I" class_method="true"/>
+<method name="access$5" type="(Lcc/openframeworks/OFAndroidVideoPlayer;Z)V" class_method="true"/>
+<method name="access$6" type="(Lcc/openframeworks/OFAndroidVideoPlayer;Z)V" class_method="true"/>
+</class>
+<class name="cc/openframeworks/OFAndroidWindow" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(II)V"/>
+<method name="onSurfaceCreated" type="(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V"/>
+<method name="onSurfaceChanged" type="(Ljavax/microedition/khronos/opengles/GL10;II)V"/>
+<method name="onDrawFrame" type="(Ljavax/microedition/khronos/opengles/GL10;)V"/>
+<method name="isSetup" type="()Z"/>
+</class>
+<class name="cc/openframeworks/OFEGLConfigChooser" super="java/lang/Object">
+</class>
+<class name="cc/openframeworks/OFGestureListener$1" super="java/lang/Object">
+<method name="&lt;init&gt;" type="(Lcc/openframeworks/OFGestureListener;)V"/>
+<method name="onTouch" type="(Landroid/view/View;Landroid/view/MotionEvent;)Z"/>
+</class>
+<class name="cc/openframeworks/OFGestureListener" super="android/view/GestureDetector$SimpleOnGestureListener">
+</class>
+<interface name="cc/openframeworks/OFActivity">
+<method name="onGLSurfaceCreated" type="()V"/>
+<method name="onLoadPercent" type="(F)V"/>
+<method name="onUnpackingResourcesDone" type="()V"/>
+<method name="onPostCreate" type="()V"/>
+<method name="onCameraOpenFailed" type="()V"/>
+</interface>
+<interface name="cc/openframeworks/OFAndroidCameraThread$CameraEventHandler">
+<method name="onPreviewFrame" type="([B)V"/>
+<method name="onPreviewStarted" type="(IIII)V"/>
+</interface>
+<interface name="cc/openframeworks/OFAndroidCameraThread$CameraParamsTask">
+<method name="updateCameraParams" type="(Landroid/hardware/Camera$Parameters;)V"/>
+</interface>
+<interface name="cc/openframeworks/OFAndroidCameraThread$CameraPictureCallback">
+<method name="onPictureTaken" type="([BIII)V"/>
+</interface>
+</signatures>
