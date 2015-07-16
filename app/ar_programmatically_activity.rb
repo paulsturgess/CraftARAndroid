@@ -1,57 +1,57 @@
-class ARProgrammaticallyActivity < Android::App::Activity
-#class ARProgrammaticallyActivity < Com::CraftAR::CraftARActivity
+#class ARProgrammaticallyActivity < Android::App::Activity
+class ARProgrammaticallyActivity < Com::CraftAR::CraftARActivity
 
-  # def finish
-  #   super
-  # end
+  def finish
+    super
+  end
 
-  # def getAppDataDirectory
-  #   super
-  # end
+  def getAppDataDirectory
+    super
+  end
 
-  # def onBackPressed
-  #   super
-  # end
+  def onBackPressed
+    super
+  end
 
-  # def onCreate savedInstanceState
-  #   super
-  # end
+  def onCreate savedInstanceState
+    super
+  end
 
-  # def onCreateOptionsMenu menu
-  #   super
-  # end
+  def onCreateOptionsMenu menu
+    super
+  end
 
-  # def onKeyDown keyCode, event
-  #   super
-  # end
+  def onKeyDown keyCode, event
+    super
+  end
 
-  # def onKeyUp keyCode, event
-  #   super
-  # end
+  def onKeyUp keyCode, event
+    super
+  end
 
-  # def onOptionsItemSelected item
-  #   super
-  # end
+  def onOptionsItemSelected item
+    super
+  end
 
-  # def onPause
-  #   super
-  # end
+  def onPause
+    super
+  end
 
-  # def onPostCreate
-  #   super
-  # end
+  def onPostCreate
+    super
+  end
 
-  # def onPrepareOptionsMenu menu
-  #   super
-  # end
+  def onPrepareOptionsMenu menu
+    super
+  end
 
-  # def onResume
-  #   super
-  # end
+  def onResume
+    super
+  end
 
-  # def setCameraView cameraView
-  #   super
-  # end
+  def setCameraView cameraView
+    super
+  end
 
 #   TAG = "CraftARTrackingExample"
 #   COLLECTION_TOKEN = "craftarexamples1"
