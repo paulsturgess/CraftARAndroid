@@ -1,3 +1,3 @@
-// public ARProgrammaticallyActivity() {
-//   super();
-// }
+public ARProgrammaticallyActivity() {
+  super();
+}

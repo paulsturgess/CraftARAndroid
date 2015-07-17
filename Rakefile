@@ -31,8 +31,14 @@ Motion::Project::App.setup do |app|
     'android.hardware.camera.autofocus'
   ]
 
-  app.vendor_project jar: "vendor/craftar-augmented-reality-sdk-android/libs/android-support-v4.jar"
-  app.vendor_project jar: "vendor/craftar-augmented-reality-sdk-android/libs/android-tracking-sdk.jar"
+  app.vendor_project jar: 'vendor/craftar-augmented-reality-sdk-android/libs/android-support-v4.jar',
+  native: [
+    "vendor/craftar-augmented-reality-sdk-android/libs/armeabi-v7a/libCraftARSDK_neon.so",
+    "vendor/craftar-augmented-reality-sdk-android/libs/armeabi-v7a/libCraftARSDK.so",
+    "vendor/craftar-augmented-reality-sdk-android/libs/armeabi-v7a/libneondetection.so",
+    "vendor/craftar-augmented-reality-sdk-android/libs/armeabi-v7a/libtrack.so"
+  ]
+  app.vendor_project jar: 'vendor/craftar-augmented-reality-sdk-android/libs/android-tracking-sdk.jar'
   app.vendor_project jar: "vendor/craftar-augmented-reality-sdk-android/libs/ofandroidlib.jar"
   app.vendor_project jar: "vendor/craftar-augmented-reality-sdk-android/libs/sanselan-0.97-incubator.jar"
 
